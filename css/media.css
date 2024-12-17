@@ -1,0 +1,167 @@
+
+@media (max-width: 1024px) {
+
+   /* @MEDIA --- START --- HEADER SECTION --- TABLET. */
+
+   .container {
+      padding: 0 100px
+   }
+
+   .header {
+      padding: 0;
+      padding-top: 33px;
+
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+   }
+
+   .header-nav {
+      padding-top: 33px;
+      width: 100%;
+
+      order: 3;
+   }
+
+   .header-list {
+      padding: 20px 0;
+
+      justify-content: space-between;
+
+      border-top: 1px solid #E6E8EC;
+      border-bottom: 1px solid #E6E8EC;
+   }
+
+   .header .header-item {
+      margin: 0;
+   }
+
+   /* @MEDIA --- START --- HERO SEC. --- TABLET. */
+
+   .hero-heading,
+   .hero-paragpraph {
+      max-width: 539px;
+   }
+
+   .hero::after {
+      background-size: 256px 262px;
+   }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+   /*  --- START -  768 < COMMON STYLE CONF. */
+
+  .container {
+      padding: 0 114px;
+  }
+
+  /*  --- END - 768 < COMMON STYLE CONF. */
+      /*  --- START - 768 < HEADER SEC. */
+
+   .header {
+      padding: 0;
+      padding-top: 32px;
+  }
+
+  .header-logo {
+      width: 113px;
+      height: 14px;
+  }
+
+   /* @MEDIA --- START --- HERO SEC. --- TABLET. */
+
+   .container {
+      padding: 0 114px;
+   }
+
+
+   .hero-heading,
+   .hero-paragpraph {
+      max-width: 539px;
+      width: 100%;
+   }
+
+   .hero::after {
+      display: none;
+   }
+}
+
+@media (max-width: 768px) { /* 768 < 320 */
+
+   /*  --- START -  768 < COMMON STYLE CONF. */
+
+   .container {
+      padding: 0 32px;
+   }
+
+   /*  --- END - 768 < COMMON STYLE CONF. */
+      /*  --- START - 768 < HEADER SEC. */
+
+   .header {
+      padding: 0;
+      padding-top: 15px;
+   }
+
+   .header-logo {
+      width: 87px;
+      height: 10px;
+      align-items: center;
+   }
+
+   .header-nav {
+      padding: 0;
+      padding-top: 15px;
+   }
+
+   .header-list {
+      padding: 0;
+      padding-top: 17px;
+      padding-bottom: 17px;
+
+      overflow-y: hidden;
+   }
+
+   .header-item:not(:last-child) {
+      margin-right: 32px;
+   }
+
+   /*  --- END - 768 < HEADER SEC. */
+      /*  --- START - 768 < HERO SEC. */
+
+   .hero {
+      padding: 0;
+      padding-top: 40px;
+      padding-bottom: 40px;
+   }
+
+   .hero-heading {
+      margin-bottom: 8px;
+
+      font-size: 32px;
+      font-weight: 700;
+      line-height: 100%;
+   }
+
+   .hero-heading-span {
+      font-size: 32px;
+      font-style: italic;
+      font-weight: 400;
+      line-height: 100%;
+   }
+
+   .hero-paragpraph {
+      max-width: 635px;
+      margin-bottom: 20px;
+
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 150%;
+   }
+
+   .header-strong {
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 150%;
+   }
+}
