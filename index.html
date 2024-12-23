@@ -25,47 +25,51 @@
 </head>
 
 <body class="body">
-<div class="container">
-   <header class="dflex header">
-      <a class="header-logo-link" href="index.html">
-         <img class="header-logo" src="assets/imgs/logo-header.jpg" alt="Логотип Радио W-Wave">
-      </a>
 
-      <nav class="header-nav">
-         <ul class="dflex list_reset header-list">
-            <li class="header-item">
-               <a class="header-item-link" href="#">Подкасты</a>
-            </li>
-            <li class="header-item">
-               <a class="header-item-link" href="#">Передачи</a>
-            </li>
-            <li class="header-item">
-               <a class="header-item-link" href="#">Гости</a>
-            </li>
-            <li class="header-item">
-               <a class="header-item-link" href="#">Плейлисты</a>
-            </li>
-            <li class="header-item">
-               <a class="header-item-link" href="#">О&nbsp;нас</a>
-            </li>
-         </ul>
-      </nav>
-
-      <form class="header-search-form" method="get" action="/search">
-         <button class="dflex btn_reset header-form-btn" aria-label="Поиск по сайту">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-               <path d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z" stroke="#6D31EE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-               <path d="M21 21L16.65 16.65" stroke="#6D31EE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-         </button>
-      </form>
-
-   </header>
-</div>
-
-<main class="main">
+<header>
    <div class="container">
-      <section class="section_spacing hero">
+      <div class="dflex header">
+         <a class="header-logo-link" href="index.html">
+            <img class="header-logo" src="assets/imgs/logo-header.jpg" alt="Логотип Радио W-Wave">
+         </a>
+
+         <nav class="header-nav">
+            <ul class="dflex list_reset header-list">
+               <li class="header-item">
+                  <a class="header-item-link" href="#">Подкасты</a>
+               </li>
+               <li class="header-item">
+                  <a class="header-item-link" href="#">Передачи</a>
+               </li>
+               <li class="header-item">
+                  <a class="header-item-link" href="#">Гости</a>
+               </li>
+               <li class="header-item">
+                  <a class="header-item-link" href="#">Плейлисты</a>
+               </li>
+               <li class="header-item">
+                  <a class="header-item-link" href="#">О&nbsp;нас</a>
+               </li>
+            </ul>
+         </nav>
+
+         <form class="header-search-form" method="get" action="/search">
+            <button class="dflex btn_reset header-form-btn" aria-label="Поиск по сайту">
+               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z" stroke="#6D31EE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M21 21L16.65 16.65" stroke="#6D31EE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+               </svg>
+            </button>
+         </form>
+      </div>
+   </div>
+</header>
+
+<main>
+
+<section class="section_spacing">
+   <div class="container">
+      <div class="hero">
          <h1 class="title_reset hero-heading">
             Радио <span class="hero-heading-span">W-Wave</span>
          </h1>
@@ -73,58 +77,115 @@
             Привет, на&nbsp;связи W-Wave! Раньше мы&nbsp;были изданием, а&nbsp;теперь пробуем себя в&nbsp;разговорном жанре. <strong class="header-strong">Говорим о&nbsp;музыке, политике, истории, науке и&nbsp;культуре.</strong> Здесь, помимо прямого эфира&nbsp;&mdash; архив передач и&nbsp;многое другое:)
          </p>
          <a class="btn_reset btn" href="#" aria-label="Слушать эфир" >Слушать эфир</a>
-      </section>
+      </div>
    </div>
+</section>
 
-   <div class="container">
       <section class="section_spacing podcasts">
-         <h2 class="title_reset podcasts-title">
+         <div class="container">
+         <h2 class="title_reset sub-title">
             Подкасты
          </h2>
          <ul class="dflex list_reset podcasts-list">
             <li class="dflex podcasts-item">
-               <div class="podcats-item-right-block">
+               <picture class="podcats-item-right-block">
+                  <source srcset="assets/imgs/sec-podcasts-first-img.jpg" media="(min-width: 1020px)">
                   <img src="assets/imgs/sec-podcasts-first-img.jpg" alt="Картина: Европа. XIX век">
                   <span>14 июня</span>
-               </div>
+                </picture>
                <div class="podcats-item-left-block">
                   <span class="podcasts-during">15:43</span>
-                  <h3 class="title_reset podcasts-ttile">Европа. XIX век</h3>
+                  <h3 class="title_reset podcasts-title">Европа. XIX век</h3>
                   <p class="paragraph_reset podcasts-author">Дмитрий Гутенберг</p>
                </div>
             </li>
             <li class="dflex podcasts-item">
-               <div class="podcats-item-right-block">
-                  <img src="assets/imgs/sec-podcasts-first-img.jpg" alt="Картина: Европа. XIX век">
-                  <span>14 июня</span>
-               </div>
+               <picture class="podcats-item-right-block">
+                  <source srcset="assets/imgs/sec-podcasts-second-img.jpg" media="(min-width: 1020px)">
+                  <img src="assets/imgs/sec-podcasts-second-img.jpg" alt="Картина: Скрипач">
+                  <span>11 июня</span>
+                </picture>
                <div class="podcats-item-left-block">
-                  <span class="podcasts-during">15:43</span>
-                  <h3 class="title_reset podcasts-ttile">Европа. XIX век</h3>
+                  <span class="podcasts-during">5:32</span>
+                  <h3 class="title_reset podcasts-ttile">О музыке</h3>
                   <p class="paragraph_reset podcasts-author">Дмитрий Гутенберг</p>
                </div>
             </li>
-            <li class="podcasts-item">
-
+            <li class="dflex podcasts-item">
+               <picture class="podcats-item-right-block">
+                  <source srcset="assets/imgs/sec-podcasts-third-img.jpg" media="(min-width: 1020px)">
+                  <img src="assets/imgs/sec-podcasts-third-img.jpg" alt="Картина: Толпа людей">
+                  <span>8 июня</span>
+                </picture>
+               <div class="podcats-item-left-block">
+                  <span class="podcasts-during">8:54</span>
+                  <h3 class="title_reset podcasts-title">Люди сегодня</h3>
+                  <p class="paragraph_reset podcasts-author">Анна Васильева</p>
+               </div>
             </li>
-            <li class="podcasts-item">
-
+            <li class="dflex podcasts-item">
+               <picture class="podcats-item-right-block">
+                  <source srcset="assets/imgs/sec-podcasts-fourth-img.jpg" media="(min-width: 1020px)">
+                  <img src="assets/imgs/sec-podcasts-fourth-img.jpg" alt="Картина: Африканская девушка">
+                  <span>5 июня</span>
+                </picture>
+               <div class="podcats-item-left-block">
+                  <span class="podcasts-during">9:04</span>
+                  <h3 class="title_reset podcasts-ttile">Хэллоу, Африка!</h3>
+                  <p class="paragraph_reset podcasts-author">Пётр Дмитриевский</p>
+               </div>
             </li>
-            <li class="podcasts-item">
-
+            <li class="dflex podcasts-item">
+               <picture class="podcats-item-right-block">
+                  <source srcset="assets/imgs/sec-podcasts-fifth-img.png" media="(min-width: 1020px)">
+                  <img src="assets/imgs/sec-podcasts-fifth-img.png" alt="Картина: Размышляющего человека">
+                  <span>2 июня</span>
+                </picture>
+               <div class="podcats-item-left-block">
+                  <span class="podcasts-during">7:03</span>
+                  <h3 class="title_reset podcasts-ttile">Обо всём</h3>
+                  <p class="paragraph_reset podcasts-author">Пётр Дмитриевский</p>
+               </div>
             </li>
-            <li class="podcasts-item">
-
+            <li class="dflex podcasts-item">
+               <picture class="podcats-item-right-block">
+                  <source srcset="assets/imgs/sec-podcasts-sixth-img.jpg" media="(min-width: 1020px)">
+                  <img src="assets/imgs/sec-podcasts-sixth-img.jpg" alt="Картина: Палитра цветов">
+                  <span>28 мая</span>
+                </picture>
+               <div class="podcats-item-left-block">
+                  <span class="podcasts-during">9:15</span>
+                  <h3 class="title_reset podcasts-ttile">Физика цвета</h3>
+                  <p class="paragraph_reset podcasts-author">Татьяна Флеганова</p>
+               </div>
             </li>
-            <li class="podcasts-item">
-
+            <li class="dflex podcasts-item">
+               <picture class="podcats-item-right-block">
+                  <source srcset="assets/imgs/sec-podcasts-seventh-img.jpg" media="(min-width: 1020px)">
+                  <img src="assets/imgs/sec-podcasts-seventh-img.jpg" alt="Картина: Палитра цветов">
+                  <span>22 мая</span>
+                </picture>
+               <div class="podcats-item-left-block">
+                  <span class="podcasts-during">16:04</span>
+                  <h3 class="title_reset podcasts-ttile">Источник звука</h3>
+                  <p class="paragraph_reset podcasts-author">Пётр Дмитриевский</p>
+               </div>
             </li>
-            <li class="podcasts-item">
-
+            <li class="dflex podcasts-item">
+               <picture class="podcats-item-right-block">
+                  <source srcset="assets/imgs/sec-podcasts-eightth-img.jpg" media="(min-width: 1020px)">
+                  <img src="assets/imgs/sec-podcasts-eightth-img.jpg" alt="Картина: Ужин">
+                  <span>22 мая</span>
+                </picture>
+               <div class="podcats-item-left-block">
+                  <span class="podcasts-during">6:55</span>
+                  <h3 class="title_reset podcasts-ttile">Правила этикета</h3>
+                  <p class="paragraph_reset podcasts-author">Татьяна Флеганова</p>
+               </div>
             </li>
          </ul>
+      </div>
       </section>
-   </div>
 
 </main>
 

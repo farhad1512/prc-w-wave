@@ -71,9 +71,14 @@ svg {
    --clr-btn: #6D31EE;
 
    /* # -- TXT COLOR */
+   --clr-def-sec-txt: #121723;
    --clr-def-txt: #FFF;
    --clr-main-txt: #A1A6B4;
    --clr-additional-txt: #A1A6B4;
+
+   /* # -- BGR COLOR */
+   --bg-main-clr: #FFF;
+   --bg-additional-clr: #E6E8EC;
 
    /* # -- GAP */
    --gap-margin: 30px;
@@ -118,6 +123,18 @@ body {
    border-radius: 40px;
    background: #6D31EE;
 }
+
+.sub-title {
+   margin-bottom: 12px;
+
+   font-size: 48px;
+   font-weight: 400;
+   line-height: 100%; /* 48px */
+
+   color: var(--clr-def-sec-txt);
+}
+
+
 
 /* --- START - HEADER SECTION. */
 
@@ -208,11 +225,11 @@ body {
 .hero::after {
    position: absolute;
    content: '';
-   top: 0;
+   bottom: -50px;
    right: 0;
 
-   width: 100%;
-   height: 100%;
+   width: 350px;
+   height: 372px;
    object-fit: contain;
 
    background: url(../assets/imgs/microphone-hero.jpg) no-repeat center right / 350px 372px;
@@ -221,3 +238,82 @@ body {
 
 /*  --- END - HERO CONF. */
    /* --- START - PODCASTS SECTION. */
+
+.podcasts {
+   background-color: var(--bg-additional-clr);
+}
+
+.podcasts h2 {
+   margin: 0;
+   margin-bottom: 30px;
+}
+
+.podcasts-list {
+   flex-wrap: wrap;
+   gap: 30px;
+
+}
+
+.podcasts-item {
+   outline: 1px solid red;
+   background-color: var(--bg-main-clr);
+   width: calc(50% - 15px);
+}
+
+.podcats-item-right-block {
+   position: relative;
+   max-width: 112px;
+   height: 140px;
+}
+
+.podcats-item-right-block img {
+   width: 112px;
+   height: 140px; /* ВЫСТАВЛЕНЫ РАЗМЕРЫ ЖЕСТКО*/
+
+}
+
+.podcats-item-right-block span {
+   position: absolute;
+   padding: 3px 6px;
+
+   background-color: #E6E8EC;
+   bottom: 0;
+   left: 0;
+
+   color: #121723;
+
+   text-align: center;
+   font-size: 10px;
+   font-weight: 400;
+   line-height: normal;
+}
+
+.podcats-item-left-block {
+   width: 100%;
+   padding: 40px 30px;
+}
+
+.podcasts-during {
+   margin-bottom: 8px;
+
+   font-size: var(--px-twelve);
+   color: var(--clr-def-sec-txt);
+   font-weight: 400;
+   line-height: normal;
+}
+
+.podcasts-title {
+   margin-bottom: 4px;
+
+   font-size: var(--px-twenty);
+   color: var(--clr-def-sec-txt);
+   font-weight: 400;
+   line-height: normal;
+}
+
+.podcasts-author {
+   font-size: var(--px-sixteen);
+   color: var(--clr-additional-txt);
+   font-weight: 400;
+   line-height: normal;
+}
