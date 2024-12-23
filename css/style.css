@@ -173,6 +173,7 @@ body {
 }
 
 .hero-heading {
+   max-width: 635px;
    margin-bottom: 14px;
 
    font-size: 60px;
@@ -217,3 +218,6 @@ body {
    background: url(../assets/imgs/microphone-hero.jpg) no-repeat center right / 350px 372px;
    z-index: -1;
 }
+
+/*  --- END - HERO CONF. */
+   /* --- START - PODCASTS SECTION. */

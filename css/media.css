@@ -83,6 +83,14 @@
    }
 
    .hero::after {
+      background-size: 256px 262px;
+      /* width: 256px;
+      height: 262px; */
+   }
+}
+
+@media (max-width: 920px) {
+   .hero::after {
       display: none;
    }
 }
