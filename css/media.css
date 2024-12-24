@@ -180,4 +180,25 @@
       font-weight: 400;
       line-height: 150%;
    }
+
+   /*  --- END - 768 < HERO SEC. */
+      /*  --- START - 768 < PODCASTS SEC. */
+
+   .podcasts-item {
+      width: 100%;
+      min-height: 185px;
+      flex-direction: column;
+   }
+
+   .podcats-item-right-block {
+      max-width: 0;
+      max-width: 100%;
+      object-fit: contain;
+}
+
+   .podcats-item-right-block img {
+      width: 100%; /* Растягивает изображение на всю ширину */
+      height: auto; /* Сохраняет пропорции */
+      object-fit: cover;
+   }
 }
