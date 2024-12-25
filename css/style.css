@@ -260,19 +260,19 @@ body {
    width: calc(50% - 15px);
 }
 
-.podcats-item-right-block {
+.podcasts-item-right-block {
    position: relative;
    max-width: 112px;
    height: 140px;
 }
 
-.podcats-item-right-block img {
+.podcasts-item-right-block img {
    width: 100%;
-   height: 140px;
+   min-height: 140px;
    object-fit: cover;
 }
 
-.podcats-item-right-block span {
+.podcasts-item-right-block span {
    position: absolute;
    padding: 3px 6px;
 
@@ -288,7 +288,7 @@ body {
    line-height: normal;
 }
 
-.podcats-item-left-block {
+.podcasts-item-left-block {
    width: 100%;
    padding: 40px 30px;
 }
@@ -317,3 +317,6 @@ body {
    font-weight: 400;
    line-height: normal;
 }
+
+/*  --- END - PODCASTS CONF. */
+   /* --- START - SHOWS SECTION. */

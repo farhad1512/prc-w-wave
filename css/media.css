@@ -185,20 +185,41 @@
       /*  --- START - 768 < PODCASTS SEC. */
 
    .podcasts-item {
-      width: 100%;
       min-height: 185px;
       flex-direction: column;
+      align-items: stretch;
    }
 
-   .podcats-item-right-block {
-      max-width: 0;
+   .podcasts-item-right-block {
       max-width: 100%;
-      object-fit: contain;
-}
+      height: auto;
+   }
 
-   .podcats-item-right-block img {
-      width: 100%; /* Растягивает изображение на всю ширину */
-      height: auto; /* Сохраняет пропорции */
-      object-fit: cover;
+   .podcasts-item-right-block img {
+      width: 100%;
+      height: auto; /* Чтобы сохранить пропорции */
+      object-fit: cover; /* Если нужно заполнение */
+   }
+
+   .podcasts-item-left-block {
+      min-height: 113px;
+   }
+
+   .podcasts-item-right-block span {
+      padding: 0;
+      padding: 3px 9px;
+
+      top: 0;
+      bottom: auto;
+   }
+
+   .podcasts-during {
+      margin: 0;
+      margin-bottom: 6px;
+   }
+
+   .podcasts-ttile {
+      margin: 0;
+      margin-bottom: 3px;
    }
 }
