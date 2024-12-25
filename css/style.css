@@ -320,3 +320,42 @@ body {
 
 /*  --- END - PODCASTS CONF. */
    /* --- START - SHOWS SECTION. */
+
+   .tvshow-right-wrapper {
+      flex-direction: column;
+      justify-content: space-between;
+   }
+
+   .archive-wrapper::before {
+      /* ОСТАНОВИЛСЯ ЗДЕСЬ */
+   }
+
+   .archive-btn {
+      width: 160px;
+      padding: 17px 43px;
+      margin-bottom: 12px;
+
+      font-size: var(--px-sixteen);
+      font-weight: 500;
+      line-height: normal;
+      text-align: center;
+      color: var(--clr-def-sec-txt);
+
+      background: var(--bg-main-clr);
+      border-radius: 77px;
+      border: 2px solid #121723;
+   }
+
+   .tvshows-descr {
+      font-size: var(--px-sixteen);
+      font-style: normal;
+      font-weight: 400;
+      line-height: 150%; /* 24px */
+      color: var(--clr-additional-txt);
+   }
+
+   .archive-wrapper {
+      flex-direction: column;
+   }
+
+
