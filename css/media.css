@@ -87,6 +87,12 @@
       /* width: 256px;
       height: 262px; */
    }
+
+   /*  --- END - HERO SEC. */
+      /* --- START - SHOWS SECTION. */
+
+   .tvshows-list {
+      grid-template-columns: repeat(2, 1fr);
 }
 
 @media (max-width: 920px) {
@@ -101,6 +107,19 @@
    .podcasts-item {
       width: 100%;
    }
+
+        /* --- START - SHOWS SECTION. */
+
+   .tvshows {
+      flex-direction: column-reverse;
+   }
+
+
+   .tvshow-left-wrapper {
+      margin: 0;
+      align-items:center;
+   }
+
 }
 
 @media (max-width: 768px) { /* 768 < 320 */
@@ -222,4 +241,5 @@
       margin: 0;
       margin-bottom: 3px;
    }
+  }
 }

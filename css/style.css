@@ -321,41 +321,114 @@ body {
 /*  --- END - PODCASTS CONF. */
    /* --- START - SHOWS SECTION. */
 
-   .tvshow-right-wrapper {
-      flex-direction: column;
-      justify-content: space-between;
-   }
+.tvshow-left-wrapper {
+   margin-right: 30px;
+   max-width: 255px;
+   min-height: 550px;
 
-   .archive-wrapper::before {
-      /* ОСТАНОВИЛСЯ ЗДЕСЬ */
-   }
+   flex-direction: column;
+   justify-content: space-between;
+}
 
-   .archive-btn {
-      width: 160px;
-      padding: 17px 43px;
-      margin-bottom: 12px;
+.tvshows-title {
+   margin: 0;
+}
 
-      font-size: var(--px-sixteen);
-      font-weight: 500;
-      line-height: normal;
-      text-align: center;
-      color: var(--clr-def-sec-txt);
+.archive-wrapper::before {
+   content: '';
+   top: 0;
+   left: 0;
+   width: 65px;
+   height: 89px;
+   margin-bottom: 24px;
+   background: url(../assets/imgs/microphone-tvshows.jpg) no-repeat center center / contain ;
+}
 
-      background: var(--bg-main-clr);
-      border-radius: 77px;
-      border: 2px solid #121723;
-   }
+.archive-wrapper {
+   flex-direction: column;
+}
 
-   .tvshows-descr {
-      font-size: var(--px-sixteen);
-      font-style: normal;
-      font-weight: 400;
-      line-height: 150%; /* 24px */
-      color: var(--clr-additional-txt);
-   }
+.archive-btn {
+   width: 160px;
+   padding: 17px 43px;
+   margin-bottom: 12px;
 
-   .archive-wrapper {
-      flex-direction: column;
-   }
+   font-size: var(--px-sixteen);
+   font-weight: 500;
+   line-height: normal;
+   text-align: center;
+   color: var(--clr-def-sec-txt);
+
+   background: var(--bg-main-clr);
+   border-radius: 77px;
+   border: 2px solid #121723;
+}
+
+.archive-btn-descr {
+   color: var(--clr-additional-txt);
+
+   font-size: var(--px-sixteen);
+   font-weight: 400;
+   line-height: 150%;
+}
+
+.tvshows-descr {
+   max-width: 255px;
+
+   font-size: var(--px-sixteen);
+   font-weight: 400;
+   line-height: 150%;
+   color: var(--clr-additional-txt);
+}
+
+.tvshows-list {
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   width: 100%;
+   gap: 30px;
+}
+
+.tvshows-item {
+   min-height: 260px;
+   flex-direction: column;
+}
+
+.tvshows-item img {
+   display: block;
+   width: 100%;
+   height: 148px;
+
+}
+
+.tvshows-sub-title {
+   margin-bottom: 4px;
+
+   font-size: var(--px-twenty);
+   font-weight: 500;
+   line-height: normal;
+   color: var(var--clr-def-sec-txt);
+}
+
+.tvshows-descr {
+   margin-bottom: 20px;
+
+   font-size: var(--px-twelve);
+   font-weight: 400;
+   line-height: normal;
+   color: #A1A6B4;
+}
+
+.tvshows-link {
+   font-size: var(--px-sixteen);
+   color: var(--clr-def-sec-txt);
+   font-style: italic;
+   font-weight: 400;
+   line-height: normal;
+}
+
+.tvshows-item-content {
+   padding: 20px 0 20px 16px;
+   border: 1px solid #E6E8EC;
+}
 
 
