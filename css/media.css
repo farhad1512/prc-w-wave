@@ -3,10 +3,6 @@
 
    /* @MEDIA --- START --- HEADER SECTION --- TABLET. */
 
-   .container {
-      padding: 0 100px
-   }
-
    .header {
       padding: 0;
       padding-top: 33px;
@@ -46,6 +42,13 @@
    .hero::after {
       background-size: 256px 262px;
    }
+
+   /*  --- END - HERO SEC. */
+      /* --- START - SHOWS SECTION. */
+
+   .tvshow-list {
+      flex: 1 1 calc((100% - 30px) / 2);
+   }
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -53,7 +56,7 @@
    /*  --- START -  768 < COMMON STYLE CONF. */
 
   .container {
-      padding: 0 114px;
+      padding: 0 100px;
   }
 
   /*  --- END - 768 < COMMON STYLE CONF. */
@@ -71,11 +74,6 @@
 
    /* @MEDIA --- START --- HERO SEC. --- TABLET. */
 
-   .container {
-      padding: 0 114px;
-   }
-
-
    .hero-heading,
    .hero-paragpraph {
       max-width: 539px;
@@ -84,15 +82,11 @@
 
    .hero::after {
       background-size: 256px 262px;
-      /* width: 256px;
-      height: 262px; */
    }
 
    /*  --- END - HERO SEC. */
       /* --- START - SHOWS SECTION. */
 
-   .tvshows-list {
-      grid-template-columns: repeat(2, 1fr);
 }
 
 @media (max-width: 920px) {
@@ -108,17 +102,8 @@
       width: 100%;
    }
 
-        /* --- START - SHOWS SECTION. */
+   /* --- START - SHOWS SECTION. */
 
-   .tvshows {
-      flex-direction: column-reverse;
-   }
-
-
-   .tvshow-left-wrapper {
-      margin: 0;
-      align-items:center;
-   }
 
 }
 
@@ -242,4 +227,4 @@
       margin-bottom: 3px;
    }
   }
-}
+
