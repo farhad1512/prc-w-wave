@@ -495,3 +495,89 @@ body {
    border-radius: 77px;
    border: 2px solid #AA9DFA;
 }
+
+/*  --- END - GUESTS SECTION. */
+   /* --- START - PLAYLISTS SECTION. */
+
+.playlists-title {
+   margin-bottom: 12px;
+
+   font-size: 48px;
+   color: var(--clr-def-sec-txt);
+   font-weight: 400;
+   line-height: 100%; /* 48px */
+}
+
+.playlists-left-side {
+   max-width: 350px;
+   margin-right: 30px;
+
+   flex-direction: column;
+}
+
+.playlists-left-side span:nth-of-type(1) {
+   margin-bottom: 6px;
+
+   font-size: var(--px-sixteen);
+   color: var(--clr-additional-txt);
+   font-weight: 300;
+   line-height: 22px; /* 137.5% */
+}
+
+.playlists-left-side span:nth-of-type(2) {
+   width: 30px;
+   height: 30px;
+   padding: 5px;
+
+   font-size: var(--px-twelve);
+   color: var(--clr-additional-txt);
+   font-weight: 400;
+   line-height: normal;
+
+   border-radius: 100px;
+   border: 1px solid #A1A6B4;
+}
+
+.playlists-descl   {
+   font-size: var(--px-sixteen);
+   color: var(--clr-additional-txt);
+   font-weight: 400;
+   line-height: 22px; /* 137.5% */
+}
+
+.playlists-right-side {
+   max-width: 730px;
+}
+
+.playlists-list {
+   width: 100%;
+
+   flex-wrap: wrap;
+   gap: 30px;
+}
+
+.playlists-item {
+   max-width: 160px;
+   min-height: 224px;
+   line-height: 0;
+}
+
+.playlists-song-name-title {
+   margin-bottom: 2px;
+
+   font-size: var(--px-sixteen);
+   color: var(--clr-def-sec-txt);
+   font-weight: 500;
+   line-height: normal;
+}
+
+.playlists-item-content {
+   padding: 16px;
+}
+
+.playlists-item-content span {
+   font-size: var(--px-twelve);
+   color: var(--clr-additional-txt);
+   font-weight: 400;
+   line-height: normal;
+}
