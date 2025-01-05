@@ -1,0 +1,22 @@
+<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="14" height="14" fill="#F2F2F2"/>
+<g id="Desktop" clip-path="url(#clip0_0_1)">
+<rect width="1920" height="6876" transform="translate(-405 -6445)" fill="#E6E8EC"/>
+<g id="about">
+<rect width="1920" height="1293" transform="translate(-405 -1185)" fill="#121723"/>
+<g id="Frame 164">
+<g id="Group 222">
+<g id="Check">
+<rect id="Rectangle 43" x="0.5" y="0.5" width="13" height="13" stroke="white"/>
+<path id="Rectangle 44" d="M10.9498 4.08233L6.00002 9.03208L3.17159 6.20365" stroke="#AA9DFA" stroke-width="2"/>
+</g>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_0_1">
+<rect width="1920" height="6876" fill="white" transform="translate(-405 -6445)"/>
+</clipPath>
+</defs>
+</svg>

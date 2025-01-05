@@ -511,6 +511,7 @@ body {
 .playlists-left-side {
    max-width: 350px;
    margin-right: 30px;
+   min-height: 746px;
 
    flex-direction: column;
 }
@@ -554,11 +555,14 @@ body {
 
    flex-wrap: wrap;
    gap: 30px;
+   justify-content: flex-start;
 }
 
 .playlists-item {
-   max-width: 160px;
-   min-height: 224px;
+   /* max-width: 160px;
+   min-height: 224px; */
+
+   width: calc(26% - 30px);
    line-height: 0;
 }
 
@@ -581,3 +585,250 @@ body {
    font-weight: 400;
    line-height: normal;
 }
+
+/*  --- END - PLAYLISTS SECTION. */
+   /* --- START - MARKET SECTION. */
+
+.market {
+   background: #292E39;
+   min-height: 804px;
+}
+
+.market-wrapper {
+   justify-content: space-between;
+}
+
+.market-left-side {
+   width: 640px;
+   height: 562px;
+
+   background: url(../assets/imgs/markets-img.png) no-repeat center center;
+   background-size: cover;
+}
+
+.market-right-side {
+   max-width: 445px;
+   min-height: auto;
+
+   flex-direction: column;
+}
+
+.market-title {
+   margin-bottom: ;
+
+   font-size: 48px;
+   color: #F0D288;
+   font-weight: 400;
+   line-height: 100%; /* 48px */
+}
+
+.market-descr {
+   margin-bottom: 12px;
+
+   font-size: var(--px-sixteen);
+   color: var(--clr-def-txt);
+
+   font-weight: 400;
+   line-height: 180%; /* 28.8px */
+}
+
+.market-right-side > :nth-child(3) {
+   margin: 0;
+   margin-bottom: 30px;
+}
+
+.market-right-side span {
+   margin: 0;
+   margin-bottom: 30px;
+
+   font-size: 30px;
+   color: var(--clr-def-txt);
+   font-weight: 500;
+   line-height: normal;
+}
+
+.market-btn {
+   padding: 25px 13px;
+
+   width: 300px;
+   height: 70px;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+
+
+   font-size: var(--px-twenty);
+   color: #F0D288;
+   font-weight: 500;
+   line-height: 100%; /* 20px */
+
+   background-color: transparent;
+   border-radius: 100px;
+   border: 2px solid #F0D288;
+}
+
+/*  --- END - MARKET SECTION. */
+   /* --- START - MARKET SECTION. */
+
+   .about-us {
+      min-height: 1293px;
+      background-color: #121723;
+   }
+
+   .about-us-title {
+      margin-bottom: 12px;
+
+      font-size: 48px;
+      color: var(--clr-def-txt);
+      font-weight: 400;
+      line-height: 100%; /* 48px */
+   }
+
+   .about-us-top-wrapper {
+      gap: 30px;
+   }
+
+   .about-us-content {
+      max-width: 634px;
+   }
+
+   .about-us-content b {
+      margin-bottom: 8px;
+
+      font-size: var(--px-twenty);
+      color: var(--clr-additional-txt);
+      font-weight: 700;
+      line-height: 150%; /* 30px */
+   }
+
+   .about-us-content p {
+      font-size: var(--px-twelve);
+      color: var(--clr-additional-txt);
+      font-weight: 400;
+      line-height: 160%; /* 32px */
+   }
+
+   .about-us-right-side {
+      width: 445px;
+      height: 290px;
+      background: url(../assets/imgs/about-us-spirals.png) no-repeat center center;
+      background-size: 445px 290px;
+      background-size: contain;
+   }
+
+   .about-us-item-title {
+      margin-bottom: 8px;
+
+      color: var(--clr-def-txt);
+      font-size: var(--px-twenty);
+      font-weight: 500;
+      line-height: normal;
+   }
+
+   .about-us-item-descr {
+
+      font-size: var(--px-sixteen);
+      color: var(--clr-additional-txt);
+      font-weight: 400;
+      line-height: 24px; /* 150% */
+   }
+
+   .about-us-form {
+      flex-direction: column;
+      gap: 30px;
+   }
+
+   .about-us-inputs-wrapper {
+      max-width: 920px;
+
+      justify-content: space-between;
+   }
+
+   .about-us-textarea {
+      padding: 30px 32px;
+
+
+      max-width: 920px;
+      min-height: 150px;
+
+      color: var(--clr-additional-txt);
+      font-size: var(--px-twenty);
+      font-weight: 400;
+      line-height: normal;
+
+      resize: none;
+
+      border-radius: 30px;
+      background-color: transparent;
+      border: 1px solid #FFF;
+   }
+
+   .about-us-input {
+      padding: 25px 32px;
+      width: 445px;
+      max-width: 445px;
+      min-height: 70px;
+
+      color: var(--clr-additional-txt);
+      font-size: var(--px-twenty);
+      font-weight: 400;
+      line-height: normal;
+
+      border-radius: 40px;
+      background-color: transparent;
+      border: 1px solid #FFF;
+   }
+
+   .input-btn {
+      align-self: flex-start;
+   }
+
+   .about-us-checkbox {
+      align-self: flex-start;
+
+      font-size: var(--px-twelve);
+      color: var(--clr-def-txt);
+      font-weight: 500;
+      line-height: normal;
+   }
+
+   fieldset,
+   legend {
+      appearance: none;
+   }
+
+   .about-us-label {
+      padding-left: 2em;
+
+      font-size: var(--px-twelve);
+      color: var(--clr-def-txt);
+      font-weight: 500;
+      line-height: normal;
+
+      cursor: pointer;
+   }
+
+   .about-us-default-checkbox {
+      position: absolute;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      z-index: -1;
+   }
+
+   .about-us-checkbox {
+      position: absolute;
+      width: 1em;
+      height: 1em;
+      border: 1px solid #FFF;
+      margin-left: -2em;
+   }
+
+   .about-us-default-checkbox:checked + .about-us-checkbox::before {
+      position: absolute;
+      content: '';
+      width: 24px;
+      height: 24px;
+      background: url(../assets/icons/checkbox.svg) no-repeat center center;
+
+   }
