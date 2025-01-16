@@ -2,59 +2,61 @@
 <html lang="ru">
 <head>
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Радио W-Wave</title>
-    <!-- SEO -->
-    <meta name="description" content="Описание сайта или страницы">
-    <meta name="keywords" content="ключевые, слова, для, SEO">
+   <title>Радио W-Wave</title>
 
-    <!-- КАК ЭТО РАБОТАЕТ? ИЗУЧАЕМ <meta property="og:title" content="Название страницы">
-    <meta property="og:description" content="Краткое описание страницы">
-    <meta property="og:image" content="ссылка на изображение">
-    <meta property="og:url" content="ссылка на страницу"> -->
+   <!-- SEO -->
+   <meta name="description" content="Радио W-Wave: слушайте лучшие подкасты, любимую музыку и будьте на одной волне с нами. Узнайте больше о программах и плейлистах прямо сейчас!">
 
-    <!-- STYLES -->
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/media.css">
-    <!-- FAVICO -->
-    <link rel="icon" href="./assets/icons/favicon.svg" type="image/x-icon">
+   <!-- OPEN GRAPH -->
+   <meta property="og:title" content="Слушайте радио W-Wave">
+   <meta property="og:description" content="Подключайтесь к лучшим музыкальным плейлистам и подкастам на W-Wave. Будьте на одной волне с нами">
+   <meta property="og:image" content="https://example.com/images/radio-cover.jpg">
+   <meta property="og:url" content="https://example.com/radio">
+
+   <!-- STYLES -->
+   <link rel="stylesheet" href="css/normalize.css">
+   <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="css/media.css">
+
+   <!-- FAVICO -->
+   <link rel="icon" href="./assets/icons/favicon.svg" type="image/x-icon">
 
 </head>
 
-<body class="body">
+<body>
 
-<header>
+<header class="header-section">
    <div class="container">
-      <div class="dflex header">
-         <a class="header-logo-link" href="index.html">
-            <img class="header-logo" src="assets/imgs/logo-header.jpg" alt="Логотип Радио W-Wave">
+      <div class="dflex header-wrapper">
+         <a class="header-logo__link" href="index.html">
+            <img class="header-logo__img" src="assets/imgs/logo-header.jpg" alt="Логотип Радио W-Wave">
          </a>
 
-         <nav class="header-nav">
-            <ul class="dflex list_reset header-list">
-               <li class="header-item">
-                  <a class="header-item-link" href="#">Подкасты</a>
+         <nav class="header-nav" aria-label="Основное меню">
+            <ul class="dflex list-reset header-list">
+               <li class="header-list__item">
+                  <a class="header-item__link" href="#podcasts">Подкасты</a>
                </li>
-               <li class="header-item">
-                  <a class="header-item-link" href="#">Передачи</a>
+               <li class="header-list__item">
+                  <a class="header-item__link" href="#">Передачи</a>
                </li>
-               <li class="header-item">
-                  <a class="header-item-link" href="#">Гости</a>
+               <li class="header-list__item">
+                  <a class="header-item__link" href="#">Гости</a>
                </li>
-               <li class="header-item">
-                  <a class="header-item-link" href="#">Плейлисты</a>
+               <li class="header-list__item">
+                  <a class="header-item__link" href="#">Плейлисты</a>
                </li>
-               <li class="header-item">
-                  <a class="header-item-link" href="#">О&nbsp;нас</a>
+               <li class="header-list__item">
+                  <a class="header-item__link" href="#">О&nbsp;нас</a>
                </li>
             </ul>
          </nav>
 
-         <form class="header-search-form" method="get" action="/search">
-            <button class="dflex btn_reset header-form-btn" aria-label="Поиск по сайту">
+         <form class="header-form" method="get" action="/search" role="search">
+            <button class="dflex btn-reset header-form__btn" aria-label="Поиск по сайту">
                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z" stroke="#6D31EE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                   <path d="M21 21L16.65 16.65" stroke="#6D31EE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -67,212 +69,214 @@
 
 <main>
 
-<section class="section_spacing">
-<div class="container">
-   <div class="hero">
-      <h1 class="title_reset hero-heading">
-         Радио <span class="hero-heading-span">W-Wave</span>
-      </h1>
-      <p class="paragraph_reset hero-paragpraph">
-         Привет, на&nbsp;связи W-Wave! Раньше мы&nbsp;были изданием, а&nbsp;теперь пробуем себя в&nbsp;разговорном жанре. <strong class="header-strong">Говорим о&nbsp;музыке, политике, истории, науке и&nbsp;культуре.</strong> Здесь, помимо прямого эфира&nbsp;&mdash; архив передач и&nbsp;многое другое:)
-      </p>
-      <a class="btn_reset btn" href="#" aria-label="Слушать эфир" >Слушать эфир</a>
+<section class="section-offset hero-section">
+   <div class="container">
+      <div class="hero-wrapper">
+         <h1 class="title-reset hero-title">
+            Радио <span class="hero-title__span">W-Wave</span>
+         </h1>
+         <p class="paragraph-reset hero-paragpraph">
+            Привет, на&nbsp;связи W-Wave! Раньше мы&nbsp;были изданием, а&nbsp;теперь пробуем себя в&nbsp;разговорном жанре. <strong class="hero-paragpraph__strong">Говорим о&nbsp;музыке, политике, истории, науке и&nbsp;культуре.</strong> Здесь, помимо прямого эфира&nbsp;&mdash; архив передач и&nbsp;многое другое:)
+         </p>
+         <a class="btn-reset btn hero-btn" href="#" aria-label="Слушать эфир">Слушать эфир</a>
+      </div>
    </div>
-</div>
 </section>
 
-<section class="section_spacing podcasts">
+<section id="podcasts" class="section-offset podcasts-section" aria-labelledby="podcasts-title">
    <div class="container">
-      <h2 class="title_reset sub-title">Подкасты</h2>
-      <ul class="dflex list_reset podcasts-list">
-         <li class="dflex podcasts-item">
-            <picture class="podcasts-item-right-block">
+      <h2 class="title-reset sub-title podcasts-title" id="podcasts-title">Подкасты</h2>
+      <ul class="dflex list-reset podcasts-list">
+         <li class="dflex podcasts-list-item">
+            <picture class="podcasts-list-item__left-wrapper">
                <source srcset="assets/imgs/sec-podcasts-mob-first-img.jpg" media="(max-width: 768px)">
                <img src="assets/imgs/sec-podcasts-first-img.jpg" alt="Картина: Европа. XIX век">
-               <span>14 июня</span>
+               <span class="podcasts-list-item__date">14&nbsp;июня</span>
             </picture>
-            <div class="podcasts-item-left-block">
-               <span class="podcasts-during">15:43</span>
-               <h3 class="title_reset podcasts-title">Европа. XIX век</h3>
-               <p class="paragraph_reset podcasts-author">Дмитрий Гутенберг</p>
+            <div class="podcasts-list-item__right-wrapper">
+               <span class="podcasts-list__time">15:43</span>
+               <h3 class="title-reset podcasts-list__title">Европа. XIX век</h3>
+               <p class="paragraph-reset podcasts-list__author">Дмитрий Гутенберг</p>
             </div>
          </li>
-         <li class="dflex podcasts-item">
-            <picture class="podcasts-item-right-block">
+         <li class="dflex podcasts-list-item">
+            <picture class="podcasts-list-item__left-wrapper">
                <source srcset="assets/imgs/sec-podcasts-mob-second-img.jpg" media="(max-width: 768px)">
                <img src="assets/imgs/sec-podcasts-second-img.jpg" alt="Картина: Скрипач">
-               <span>11 июня</span>
+               <span class="podcasts-list-item__date">11&nbsp;июня</span>
             </picture>
-            <div class="podcasts-item-left-block">
-               <span class="podcasts-during">5:32</span>
-               <h3 class="title_reset podcasts-ttile">О музыке</h3>
-               <p class="paragraph_reset podcasts-author">Дмитрий Гутенберг</p>
+            <div class="podcasts-list-item__right-wrapper">
+               <span class="podcasts-list__time">5:32</span>
+               <h3 class="title-reset podcasts-list__title">О&nbsp;музыке</h3>
+               <p class="paragraph-reset podcasts-list__author">Дмитрий Гутенберг</p>
             </div>
          </li>
-         <li class="dflex podcasts-item">
-            <picture class="podcasts-item-right-block">
+         <li class="dflex podcasts-list-item">
+            <picture class="podcasts-list-item__left-wrapper">
                <source srcset="assets/imgs/sec-podcasts-mob-third-img.jpg" media="(max-width: 768px)">
                <img src="assets/imgs/sec-podcasts-third-img.jpg" alt="Картина: Толпа людей">
-               <span>8 июня</span>
+               <span class="podcasts-list-item__date">8&nbsp;июня</span>
                </picture>
-            <div class="podcasts-item-left-block">
-               <span class="podcasts-during">8:54</span>
-               <h3 class="title_reset podcasts-title">Люди сегодня</h3>
-               <p class="paragraph_reset podcasts-author">Анна Васильева</p>
+            <div class="podcasts-list-item__right-wrapper">
+               <span class="podcasts-list__time">8:54</span>
+               <h3 class="title-reset podcasts-list__title">Люди сегодня</h3>
+               <p class="paragraph-reset podcasts-list__author">Анна Васильева</p>
             </div>
          </li>
-         <li class="dflex podcasts-item">
-            <picture class="podcasts-item-right-block">
+         <li class="dflex podcasts-list-item">
+            <picture class="podcasts-list-item__left-wrapper">
                <source srcset="assets/imgs/sec-podcasts-mob-fourth-img.jpg" media="(max-width: 768px)">
                <img src="assets/imgs/sec-podcasts-fourth-img.jpg" alt="Картина: Африканская девушка">
-               <span>5 июня</span>
+               <span class="podcasts-list-item__date">5&nbsp;июня</span>
                </picture>
-            <div class="podcasts-item-left-block">
-               <span class="podcasts-during">9:04</span>
-               <h3 class="title_reset podcasts-ttile">Хэллоу, Африка!</h3>
-               <p class="paragraph_reset podcasts-author">Пётр Дмитриевский</p>
+            <div class="podcasts-list-item__right-wrapper">
+               <span class="podcasts-list__time">9:04</span>
+               <h3 class="title-reset podcasts-list__title">Хэллоу, Африка!</h3>
+               <p class="paragraph-reset podcasts-list__author">Пётр Дмитриевский</p>
             </div>
          </li>
-         <li class="dflex podcasts-item">
-            <picture class="podcasts-item-right-block">
+         <li class="dflex podcasts-list-item">
+            <picture class="podcasts-list-item__left-wrapper">
                <source srcset="assets/imgs/sec-podcasts-mob-fifth-img.jpg" media="(max-width: 768px)">
                <img src="assets/imgs/sec-podcasts-fifth-img.png" alt="Картина: Размышляющего человека">
-               <span>2 июня</span>
+               <span class="podcasts-list-item__date">2&nbsp;июня</span>
                </picture>
-            <div class="podcasts-item-left-block">
-               <span class="podcasts-during">7:03</span>
-               <h3 class="title_reset podcasts-ttile">Обо всём</h3>
-               <p class="paragraph_reset podcasts-author">Пётр Дмитриевский</p>
+            <div class="podcasts-list-item__right-wrapper">
+               <span class="podcasts-list__time">7:03</span>
+               <h3 class="title-reset podcasts-list__title">Обо всём</h3>
+               <p class="paragraph-reset podcasts-list__author">Пётр Дмитриевский</p>
             </div>
          </li>
-         <li class="dflex podcasts-item">
-            <picture class="podcasts-item-right-block">
+         <li class="dflex podcasts-list-item">
+            <picture class="podcasts-list-item__left-wrapper">
                <source srcset="assets/imgs/sec-podcasts-mob-sixth-img.jpg" media="(max-width: 768px)">
                <img src="assets/imgs/sec-podcasts-sixth-img.jpg" alt="Картина: Палитра цветов">
-               <span>28 мая</span>
+               <span class="podcasts-list-item__date">28&nbsp;мая</span>
                </picture>
-            <div class="podcasts-item-left-block">
-               <span class="podcasts-during">9:15</span>
-               <h3 class="title_reset podcasts-ttile">Физика цвета</h3>
-               <p class="paragraph_reset podcasts-author">Татьяна Флеганова</p>
+            <div class="podcasts-list-item__right-wrapper">
+               <span class="podcasts-list__time">9:15</span>
+               <h3 class="title-reset podcasts-list__title">Физика цвета</h3>
+               <p class="paragraph-reset podcasts-list__author">Татьяна Флеганова</p>
             </div>
          </li>
-         <li class="dflex podcasts-item">
-            <picture class="podcasts-item-right-block">
+         <li class="dflex podcasts-list-item">
+            <picture class="podcasts-list-item__left-wrapper">
                <source srcset="assets/imgs/sec-podcasts-mob-seventh-img.jpg" media="(max-width: 768px)">
                <img src="assets/imgs/sec-podcasts-seventh-img.jpg" alt="Картина: Палитра цветов">
-               <span>22 мая</span>
+               <span class="podcasts-list-item__date">22&nbsp;мая</span>
                </picture>
-            <div class="podcasts-item-left-block">
-               <span class="podcasts-during">16:04</span>
-               <h3 class="title_reset podcasts-ttile">Источник звука</h3>
-               <p class="paragraph_reset podcasts-author">Пётр Дмитриевский</p>
+            <div class="podcasts-list-item__right-wrapper">
+               <span class="podcasts-list__time">16:04</span>
+               <h3 class="title-reset podcasts-list__title">Источник звука</h3>
+               <p class="paragraph-reset podcasts-list__author">Пётр Дмитриевский</p>
             </div>
          </li>
-         <li class="dflex podcasts-item">
-            <picture class="podcasts-item-right-block">
+         <li class="dflex podcasts-list-item">
+            <picture class="podcasts-list-item__left-wrapper">
                <source srcset="assets/imgs/sec-podcasts-mob-eightth-img.jpg" media="(max-width: 768px)">
                <img src="assets/imgs/sec-podcasts-eightth-img.jpg" alt="Картина: Ужин">
-               <span>22 мая</span>
+               <span class="podcasts-list-item__date">22&nbsp;мая</span>
                </picture>
-            <div class="podcasts-item-left-block">
-               <span class="podcasts-during">6:55</span>
-               <h3 class="title_reset podcasts-title">Правила этикета</h3>
-               <p class="paragraph_reset podcasts-author">Татьяна Флеганова</p>
+            <div class="podcasts-list-item__right-wrapper">
+               <span class="podcasts-list__time">6:55</span>
+               <h3 class="title-reset podcasts-list__title">Правила этикета</h3>
+               <p class="paragraph-reset podcasts-list__author">Татьяна Флеганова</p>
             </div>
          </li>
       </ul>
    </div>
 </section>
 
-<section class="section_spacing tvshows">
+ <section class="section-offset tvshows" aria-labelledby="tvshows">
    <div class="container">
-      <h2 class="title_reset sub-title tvshows-title">Передачи</h2>
+      <h2 class="title-reset tvshows-title" id="tv-shows">Передачи</h2>
 
-      <div class="dflex shows-wrapper">
-         <div class="dflex archive-wrapper">
-            <a href="#" class="btn archive-btn">Архив</a>
-            <p class="paragraph_reset archive-btn-descr">
-               В архив попадают все передачи, которые вы пропустили! Enjoy:)
+      <div class="dflex tvshows-wrapper">
+         <div class="dflex tvshows-archive-wrapper">
+            <a href="#" class="btn tvshows-archive-wrapper__btn" aria-label="Архив подкастов">Архив</a>
+            <p class="paragraph-resets tvshows-archive-wrapper__descr">
+               В&nbsp;архив попадают все передачи, которые вы&nbsp;пропустили! Enjoy:)
             </p>
          </div>
 
          <div class="tvshow-right-wrapper">
-            <ul class="dflex list_reset tvshows-list">
-               <li class="dflex tvshows-item">
-                  <a href="" class="tvshows-link">
+            <ul class="dflex list-reset tvshows-list">
+               <li class="dflex tvshows-list__item">
+                  <a href="#" class="tvshows-item__link" aria-label="Подробнее О людях и книгах
+                  Анонсируется отдельно">
                      <picture>
-                        <source srcset="" media="(max-width: 768px)">
-                        <img src="assets/imgs/sec-shows-first-img.jpg" alt="Картина: Люди">
+                        <!-- <source srcset="#" media="(max-width: 768px)"> -->
+                        <img src="assets/imgs/sec-shows-first-img.jpg" alt="Раннее печатное производство в мастерской, гравюра">
                      </picture>
-                     <div class="tvshows-item-content">
-                        <h3 class="title_reset tvshows-sub-title">О людях и книгах</h3>
-                        <p class="paragraph_reset tvshows-descr">Анонсируется отдельно</p>
+                     <div class="tvshows-item__content">
+                        <h3 class="title-reset tvshows-item__title">О&nbsp;людях и&nbsp;книгах</h3>
+                        <p class="paragraph-reset tvshows-item__descr">Анонсируется отдельно</p>
                         <span>Подробнее</span>
                      </div>
                   </a>
                </li>
-               <li class="tvshows-item">
-                  <a href="" class="tvshows-link">
+
+               <li class="dflex tvshows-list__item">
+                  <a href="#" class="tvshows-item__link" aria-label="Подробнее о: Графомания td">
                      <picture>
-                        <source srcset="#" media="(max-width: 768px)">
-                        <img src="assets/imgs/sec-shows-second-img.jpg" alt="#">
+                        <!-- <source srcset="#" media="(max-width: 768px)"> -->
+                        <img src="assets/imgs/sec-shows-second-img.jpg" alt="Карикатура: писатель за пишущей машинкой и Пегас в клетке">
                      </picture>
-                     <div class="tvshows-item-content">
-                        <h3 class="title_reset tvshows-sub-title">Графомания td</h3>
-                        <p class="paragraph_reset tvshows-descr">По понедельникам в 10:00</p>
+                     <div class="tvshows-item__content">
+                        <h3 class="title-reset tvshows-item__title">Графомания&nbsp;td</h3>
+                        <p class="paragraph-reset tvshows-item__descr">По&nbsp;понедельникам в&nbsp;10:00</p>
                         <span>Подробнее</span>
                      </div>
                   </a>
                </li>
-               <li class="tvshows-item">
-                  <a href="" class="tvshows-link">
+               <li class="tvshows-list__item">
+                  <a href="#" class="tvshows-item__link" aria-label="Подробнее о: Не Рим, не Троя">
                      <picture>
-                        <source srcset="#" media="(max-width: 768px)">
-                        <img src="assets/imgs/sec-shows-third-img.jpg" alt="#">
+                        <!-- <source srcset="#" media="(max-width: 768px)"> -->
+                        <img src="assets/imgs/sec-shows-third-img.jpg" alt="Иллюстрация: два древнеримских гражданина на фоне разрушенного Колизея">
                      </picture>
-                     <div class="tvshows-item-content">
-                        <h3 class="title_reset tvshows-sub-title">Не Рим, не Троя</h3>
-                        <p class="paragraph_reset tvshows-descr">По вторникам в 12:00</p>
+                     <div class="tvshows-item__content">
+                        <h3 class="title-reset tvshows-item__title">Не&nbsp;Рим, не&nbsp;Троя</h3>
+                        <p class="paragraph-reset tvshows-item__descr">По&nbsp;вторникам в&nbsp;12:00</p>
                         <span>Подробнее</span>
                      </div>
                   </a>
                </li>
-               <li class="tvshows-item">
-                  <a href="" class="tvshows-link">
+               <li class="tvshows-list__item">
+                  <a href="#" class="tvshows-item__link" aria-label="Подробнее об: Эрудит">
                      <picture>
-                        <source srcset="#" media="(max-width: 768px)">
-                        <img src="assets/imgs/sec-shows-fourths-img.jpg" alt="#">
+                        <!-- <source srcset="#" media="(max-width: 768px)"> -->
+                        <img src="assets/imgs/sec-shows-fourths-img.jpg" alt="Иллюстрация: схематическое изображение головы с обозначением областей, связанных с практичностью, настойчивостью, уверенностью и другими качествами">
                      </picture>
-                     <div class="tvshows-item-content">
-                        <h3 class="title_reset tvshows-sub-title">Эрудит</h3>
-                        <p class="paragraph_reset tvshows-descr">По пятницам в 17:00</p>
+                     <div class="tvshows-item__content">
+                        <h3 class="title-reset tvshows-item__title">Эрудит</h3>
+                        <p class="paragraph-reset tvshows-item__descr">По&nbsp;пятницам в&nbsp;17:00</p>
                         <span>Подробнее</span>
                      </div>
                   </a>
                </li>
-               <li class="tvshows-item">
-                  <a href="" class="tvshows-link">
+               <li class="tvshows-list__item">
+                  <a href="#" class="tvshows-item__link" aria-label="Подробнее о: Тонкости эпох">
                      <picture>
-                        <source srcset="#" media="(max-width: 768px)">
-                        <img src="assets/imgs/sec-shows-fifth-img.jpg" alt="#">
+                        <!-- <source srcset="#" media="(max-width: 768px)"> -->
+                        <img src="assets/imgs/sec-shows-fifth-img.jpg" alt="Иллюстрация: средневековый рисунок кролика, сидящего верхом на фантастическом существе">
                      </picture>
-                     <div class="tvshows-item-content">
-                        <h3 class="title_reset tvshows-sub-title">Тонкости эпох</h3>
-                        <p class="paragraph_reset tvshows-descr">По субботам в 10:00</p>
+                     <div class="tvshows-item__content">
+                        <h3 class="title-reset tvshows-item__title">Тонкости эпох</h3>
+                        <p class="paragraph-reset tvshows-item__descr">По&nbsp;субботам в&nbsp;10:00</p>
                         <span>Подробнее</span>
                      </div>
                   </a>
                </li>
-               <li class="tvshows-item">
-                  <a href="" class="tvshows-link">
+               <li class="tvshows-list__item">
+                  <a href="#" class="tvshows-item__link" aria-label="Подробнее о: Живые мысли">
                      <picture>
-                        <source srcset="#" media="(max-width: 768px)">
-                        <img src="assets/imgs/sec-shows-sixth-img.jpg" alt="#">
+                        <!-- <source srcset="#" media="(max-width: 768px)"> -->
+                        <img src="assets/imgs/sec-shows-sixth-img.jpg" alt="Ёжик: наука и природа в деталях">
                      </picture>
-                     <div class="tvshows-item-content">
-                        <h3 class="title_reset tvshows-sub-title">Живые мысли</h3>
-                        <p class="paragraph_reset tvshows-descr">По воскресеньям в 15:30</p>
+                     <div class="tvshows-item__content">
+                        <h3 class="title-reset tvshows-item__title">Живые мысли</h3>
+                        <p class="paragraph-reset tvshows-item__descr">По&nbsp;воскресеньям в&nbsp;15:30</p>
                         <span>Подробнее</span>
                      </div>
                   </a>
@@ -283,174 +287,178 @@
    </div>
 </section>
 
-<section class="section_spacing guests">
+<section class="section-offset guests" aria-labelledby="guests">
    <div class="container">
-   <h2 class="title_reset guests-title">Гости</h2>
-   <p class="paragraph_reset guests-descr">
-      <span>У нас бывают:</span>
-      Блогеры, арт-критики и деятели искусства, музыканты, молодые учёные и люди науки, историки, филологи и много других интересных гостей!
-   </p>
+      <h2 class="title-reset guests-title" id="guests">Гости</h2>
+      <p class="paragraph-reset guests-descr">
+         <span>У&nbsp;нас бывают:</span>
+         Блогеры, арт-критики и&nbsp;деятели искусства, музыканты, молодые учёные и&nbsp;люди науки, историки, филологи и&nbsp;много других интересных гостей!
+      </p>
 
-   <article class="guests-article">
-      <div class="dflex guests-article-wrapper">
-         <img src="assets/imgs/sec-guests-first-img.jpg" alt="Фотография гостьи: Ольги Мартыновой">
-         <div class="dflex guests-info-wrapper">
-            <h3 class="title_reset guests-name">Ольга Мартынова</h3>
-            <p class="paragraph_reset guests-descr">
-               Российский искусствовед, арт-критик, куратор выставок, дизайнер, кандидат культурологии. Арт-критик газеты «Коммерсантъ». Ведёт активную блогерскую деятельность как куратор музея «Гараж», коим является с 2016 года.
-            </p>
-            <a class="btn guests-btn" href="#">Эфиры с гостем</a>
+      <article class="guests-article">
+         <div class="dflex guests-article-wrapper">
+            <img src="assets/imgs/sec-guests-first-img.jpg" alt="Фотография гостьи: Ольги Мартыновой">
+            <div class="dflex guests-info-wrapper">
+               <h3 class="title-reset guests-name">Ольга Мартынова</h3>
+               <p class="paragraph-reset guests-descr">
+                  Российский искусствовед, арт-критик, куратор выставок, дизайнер, кандидат культурологии. Арт-критик газеты &laquo;Коммерсантъ&raquo;. Ведёт активную блогерскую деятельность как куратор музея &laquo;Гараж&raquo;, коим является с&nbsp;2016&nbsp;года.
+               </p>
+               <a class="btn guests-btn" href="#" aria-label="Слушать эфир с Ольгой Мартыновой ">Эфиры с&nbsp;гостем</a>
+            </div>
          </div>
-      </div>
-   </article>
+      </article>
 
-   <article class="guests-article">
-      <div class="dflex guests-article-wrapper">
-         <img src="assets/imgs/sec-guests-second-img.jpg" alt="Фотография гостя: Денис Гришин">
-         <div class="dflex guests-info-wrapper">
-            <h3 class="title_reset guests-name">Денис Гришин</h3>
-            <p class="paragraph_reset guests-descr">
-               Однозначно, элементы политического процесса являются только методом политического участия и смешаны с не уникальными данными до степени совершённой неузнаваемости, из-за чего возрастает их статус бесполезности.
-            </p>
-            <a class="btn guests-btn" href="#">Эфиры с гостем</a>
+      <article class="guests-article">
+         <div class="dflex guests-article-wrapper">
+            <img src="assets/imgs/sec-guests-second-img.jpg" alt="Фотография гостя: Денис Гришин">
+            <div class="dflex guests-info-wrapper">
+               <h3 class="title-reset guests-name">Денис Гришин</h3>
+               <p class="paragraph-reset guests-descr">
+                  Однозначно, элементы политического процесса являются только методом политического участия и&nbsp;смешаны с&nbsp;не&nbsp;уникальными данными до&nbsp;степени совершённой неузнаваемости, из-за чего возрастает их&nbsp;статус бесполезности.
+               </p>
+               <a class="btn guests-btn" href="#" aria-label="Слушать эфир с Денис Гришин">Эфиры с&nbsp;гостем</a>
+            </div>
          </div>
-      </div>
-   </article>
+      </article>
 
-   <article class="guests-article">
-      <div class="dflex guests-article-wrapper">
-         <img src="assets/imgs/sec-guests-third-img.jpg" alt="Фотография гостьи: Оксана Пархоменко">
-         <div class="dflex guests-info-wrapper">
-            <h3 class="title_reset guests-name">Оксана Пархоменко</h3>
-            <p class="paragraph_reset guests-descr">
-               С другой стороны, высококачественный прототип будущего проекта выявляет срочную потребность дальнейших направлений развития. В рамках спецификации современных стандартов, реплицированные с зарубежных источников.
-            </p>
-            <a class="btn guests-btn" href="#">Эфиры с гостем</a>
+      <article class="guests-article">
+         <div class="dflex guests-article-wrapper">
+            <img src="assets/imgs/sec-guests-third-img.jpg" alt="Фотография гостьи: Оксана Пархоменко">
+            <div class="dflex guests-info-wrapper">
+               <h3 class="title-reset guests-name">Оксана Пархоменко</h3>
+               <p class="paragraph-reset guests-descr">
+                  С&nbsp;другой стороны, высококачественный прототип будущего проекта выявляет срочную потребность дальнейших направлений развития. В&nbsp;рамках спецификации современных стандартов, реплицированные с&nbsp;зарубежных источников.
+               </p>
+               <a class="btn guests-btn" href="#" aria-label="Слушать эфир с Оксаной Пархоменко ">Эфиры с&nbsp;гостем</a>
+            </div>
          </div>
-      </div>
-   </article>
-
-</div>
+      </article>
+   </div>
 </section>
 
-<section class="section_spacing playlists">
-   <div class="container"> -->
-      <h2 class="title_reset playlists-title">Плейлисты</h2>
+<section class="section-offset playlists" aria-labelledby="guests">
+   <div class="container">
+      <h2 class="title-reset playlists-title" id="guests">Плейлисты</h2>
 
       <div class="dflex playlists-wrapper">
          <div class="dflex playlists-left-side">
-            <p class="paragraph_reset playlists-descl">
-               Раздел «Плейлисты» может содержать информацию, не предназначенную для несовершеннолетних
+            <p class="paragraph-reset playlists-descl">
+               Раздел &laquo;Плейлисты&raquo; может содержать информацию, не&nbsp;предназначенную для несовершеннолетних
             </p>
-            <span>© 2021 l W-Wave</span>
+            <span>&copy;&nbsp;2021&nbsp;l W-Wave</span>
             <span>18+</span>
          </div>
 
          <div class="playlists-right-side">
-            <ul class="dflex list_reset playlists-list">
+            <ul class="dflex list-reset playlists-list">
                <li class="playlists-item">
                   <picture>
-                     <img src="assets/imgs/sec-pl-first-img.jpg" alt="">
+                     <img src="assets/imgs/sec-pl-first-img.jpg" alt="Фотография группы: Molchat Doma">
                   </picture>
                   <div class="playlists-item-content">
-                     <h3 class="title_reset playlists-song-name-title">Molchat Doma</h3>
+                     <h3 class="title-reset playlists-song-name-title">Molchat Doma</h3>
                      <span>Все песни</span>
                   </div>
                </li>
 
                <li class="playlists-item">
                   <picture>
-                     <img src="assets/imgs/sec-pl-second-img.jpg" alt="">
+                     <img src="assets/imgs/sec-pl-second-img.jpg" alt="Фотография группы: Motorama">
                   </picture>
                   <div class="playlists-item-content">
-                     <h3 class="title_reset playlists-song-name-title">Motorama</h3>
+                     <h3 class="title-reset playlists-song-name-title">Motorama</h3>
                      <span>Все синглы</span>
                   </div>
                </li>
                <li class="playlists-item">
                   <picture>
-                     <img src="assets/imgs/sec-pl-third-img.jpg" alt="">
+                     <img src="assets/imgs/sec-pl-third-img.jpg" alt="Фотография группы: Human Tetris">
                   </picture>
                   <div class="playlists-item-content">
-                     <h3 class="title_reset playlists-song-name-title">Human Tetris</h3>
-                     <span>3 последних альбома</span>
+                     <h3 class="title-reset playlists-song-name-title">Human Tetris</h3>
+                     <span>3&nbsp;последних альбома</span>
                   </div>
                </li>
 
                <li class="playlists-item">
                   <picture>
-                     <img src="assets/imgs/sec-pl-fourth-img.jpg" alt="">
+                     <img src="assets/imgs/sec-pl-fourth-img.jpg" alt="Фотография группы: Буерак">
                   </picture>
                   <div class="playlists-item-content">
-                     <h3 class="title_reset playlists-song-name-title">Molchat Doma</h3>
-                     <span>Все песни</span>
+                     <h3 class="title-reset playlists-song-name-title">Буерак</h3>
+                     <span>Все&nbsp;EP</span>
                   </div>
                </li>
 
                <li class="playlists-item">
                   <picture>
-                     <img src="assets/imgs/sec-pl-fifth-img.jpg" alt="">
+                     <img src="assets/imgs/sec-pl-fifth-img.jpg" alt="Фотография группы: Июльские Дни">
                   </picture>
                   <div class="playlists-item-content">
-                     <h3 class="title_reset playlists-song-name-title">Motorama</h3>
+                     <h3 class="title-reset playlists-song-name-title">Июльские Дни</h3>
+                     <span>Альбом &laquo;Колокол&raquo;</span>
+                  </div>
+               </li>
+               <li class="playlists-item">
+                  <picture>
+                     <img src="assets/imgs/sec-pl-sixth-img.jpg" alt="Фотография группы: Joy Division">
+                  </picture>
+                  <div class="playlists-item-content">
+                     <h3 class="title-reset playlists-song-name-title">Joy Division</h3>
+                     <span>Лучшее за&nbsp;всё время</span>
+                  </div>
+               </li>
+
+               <li class="playlists-item">
+                  <picture>
+                     <img src="assets/imgs/sec-pl-seventh-img.jpg" alt="Фотография группы: The Cure">
+                  </picture>
+                  <div class="playlists-item-content">
+                     <h3 class="title-reset playlists-song-name-title">The Cure</h3>
+                     <span>Лучшее за&nbsp;всё время</span>
+                  </div>
+               </li>
+
+               <li class="playlists-item">
+                  <picture>
+                     <img src="assets/imgs/sec-pl-eightth-img.jpg" alt="Фотография группы: New Order">
+                  </picture>
+                  <div class="playlists-item-content">
+                     <h3 class="title-reset playlists-song-name-title">New Order</h3>
+                     <span>Хиты</span>
+                  </div>
+               </li>
+               <li class="playlists-item">
+                  <picture>
+                     <img src="assets/imgs/sec-pl-nineth-img.jpg" alt="Фотография группы: Bauhaus">
+                  </picture>
+                  <div class="playlists-item-content">
+                     <h3 class="title-reset playlists-song-name-title">Bauhaus</h3>
+                     <span>Все синглы</span>
+                  </div>
+               </li>
+               <li class="playlists-item">
+                  <picture>
+                     <img src="assets/imgs/sec-pl-tenth-img.jpg" alt="Фотография группы: The Smiths ">
+                  </picture>
+                  <div class="playlists-item-content">
+                     <h3 class="title-reset playlists-song-name-title">The Smiths</h3>
                      <span>Все синглы</span>
                   </div>
                </li>
                <li class="playlists-item">
                   <picture>
-                     <img src="assets/imgs/sec-pl-sixth-img.jpg" alt="">
+                     <img src="assets/imgs/sec-pl-eleventh-img.jpg" alt="Фотография группы: Gang Of Four">
                   </picture>
                   <div class="playlists-item-content">
-                     <h3 class="title_reset playlists-song-name-title">Human Tetris</h3>
-                     <span>3 последних альбома</span>
+                     <h3 class="title-reset playlists-song-name-title">Gang Of&nbsp;Four</h3>
+                     <span>3&nbsp;последних альбома</span>
                   </div>
-               </li>
 
-               <li class="playlists-item">
-                  <picture>
-                     <img src="assets/imgs/sec-pl-seventh-img.jpg" alt="">
-                  </picture>
-                  <div class="playlists-item-content">
-                     <h3 class="title_reset playlists-song-name-title">Molchat Doma</h3>
-                     <span>Все песни</span>
-                  </div>
-               </li>
+                  <!-- ОСТАНОВИЛСЯ ЗДЕСЬ
+                   СДЕЛАНО: ДОСТУПНОСТЬ
+                   СДЕЛАНО: ТОПОГРАФ -->
 
-               <li class="playlists-item">
-                  <picture>
-                     <img src="assets/imgs/sec-pl-eightth-img.jpg" alt="">
-                  </picture>
-                  <div class="playlists-item-content">
-                     <h3 class="title_reset playlists-song-name-title">Motorama</h3>
-                     <span>Все синглы</span>
-                  </div>
-               </li>
-               <li class="playlists-item">
-                  <picture>
-                     <img src="assets/imgs/sec-pl-nineth-img.jpg" alt="">
-                  </picture>
-                  <div class="playlists-item-content">
-                     <h3 class="title_reset playlists-song-name-title">Human Tetris</h3>
-                     <span>3 последних альбома</span>
-                  </div>
-               </li>
-               <li class="playlists-item">
-                  <picture>
-                     <img src="assets/imgs/sec-pl-tenth-img.jpg" alt="">
-                  </picture>
-                  <div class="playlists-item-content">
-                     <h3 class="title_reset playlists-song-name-title">Motorama</h3>
-                     <span>Все синглы</span>
-                  </div>
-               </li>
-               <li class="playlists-item">
-                  <picture>
-                     <img src="assets/imgs/sec-pl-eleventh-img.jpg" alt="">
-                  </picture>
-                  <div class="playlists-item-content">
-                     <h3 class="title_reset playlists-song-name-title">Human Tetris</h3>
-                     <span>3 последних альбома</span>
-                  </div>
                </li>
             </ul>
          </div>
@@ -458,7 +466,7 @@
    </div>
 </section>
 
-<section class="section_spacing market">
+<!-- <section class="section_spacing market">
    <div class="dflex container market-wrapper">
       <div class="market-left-side"></div>
       <div class="dflex market-right-side">
@@ -492,9 +500,9 @@
          </a>
       </div>
    </div>
-</section>
+</section> -->
 
-<section class="section_spacing about-us">
+<!-- <section class="section_spacing about-us">
    <div class="container">
       <h2 class="title_reset about-us-title">О нас</h2>
    <div class="dflex about-us-top-wrapper">
@@ -559,9 +567,9 @@
          </form>
    </fieldset>
    </div>
-</section>
+</section> -->
 
-<footer class="footer">
+<!-- <footer class="footer">
    <div class="container">
 
       <div class="dflex footer-top-wrapper">
@@ -641,7 +649,7 @@
       </small>
    </div>
 
-</footer>
+</footer> -->
 
 </main>
 
