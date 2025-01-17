@@ -161,7 +161,8 @@ body {
 }
 
 .header-item__link {
-   font-size: 16px;
+   font-size: var(--px-twenty);
+   font-style: normal;
    font-weight: 400;
    line-height: normal;
 }
@@ -198,7 +199,7 @@ body {
 
 .hero-title {
    max-width: 635px;
-   margin-bottom: 14px;
+   margin-bottom: 12px;
 
    font-size: 60px;
    font-weight: 700;
@@ -212,16 +213,16 @@ body {
    line-height: 100%;
 }
 
-.hero-paragpraph {
+.hero-paragraph {
    max-width: 635px;
-   margin-bottom: 14px;
+   margin-bottom: 45px;
 
    font-size: var(--px-sixteen);
    font-weight: 400;
    line-height: 150%;
 }
 
-.hero-paragpraph__strong {
+.hero-paragraph__strong {
    font-size: var(--px-sixteen);
    font-weight: 400;
    line-height: 150%;
@@ -237,6 +238,10 @@ body {
 .podcasts-title {
    margin: 0;
    margin-bottom: 30px;
+
+   font-size: 48px;
+   font-weight: 400;
+   line-height: 100%; /* 48px */
 }
 
 .podcasts-list {
@@ -286,7 +291,8 @@ body {
 }
 
 .podcasts-list__time {
-   margin-bottom: 8px;
+   display: inline-block;
+   margin-bottom: 7px;
 
    font-size: var(--px-twelve);
    font-weight: 400;
@@ -564,6 +570,7 @@ body {
 
    width: calc(26% - 30px);
    line-height: 0;
+   border: 1px solid #E6E8EC;
 }
 
 .playlists-song-name-title {
@@ -638,16 +645,14 @@ body {
 }
 
 .market-right-side span {
-   margin: 0;
-   margin-bottom: 30px;
-
    font-size: 30px;
-   color: var(--clr-def-txt);
    font-weight: 500;
+   color: var(--clr-def-txt);
    line-height: normal;
 }
 
 .market-btn {
+   margin-top: auto;
    padding: 25px 13px;
 
    width: 300px;
