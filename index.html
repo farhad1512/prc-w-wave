@@ -17,15 +17,14 @@
    <meta property="og:url" content="https://example.com/radio">
 
    <!-- STYLES -->
-   <link rel="stylesheet" href="css/normalize.css">
-   <link rel="stylesheet" href="css/style.css">
-   <link rel="stylesheet" href="css/media.css">
+   <link rel="stylesheet" href="./css/normalize.css">
+   <link rel="stylesheet" href="./css/style.css">
+   <link rel="stylesheet" href="./css/media.css">
 
    <!-- FAVICO -->
    <link rel="icon" href="./assets/icons/favicon.svg" type="image/x-icon">
 
 </head>
-
 <body>
 
 <header class="header-section">
@@ -69,7 +68,7 @@
 
 <main>
 
-<section class="section-offset hero" aria-labelledby="hero__title">
+<section class="section-offset hero-offset" aria-labelledby="hero__title">
    <div class="container">
       <div class="hero-wrapper">
          <h1 class="title-reset hero__title">
@@ -90,7 +89,7 @@
       <ul class="dflex list-reset podcasts__list">
          <li class="dflex podcasts-list__item">
             <picture class="podcasts-list-left-wrapper">
-               <source srcset="assets/imgs/sec-podcasts-mob-first-img.jpg" media="(max-width: 768px)">
+               <source srcset="assets/imgs/sec-podcasts-mob-first-img.jpg" media="(max-width: 400px)">
                <img src="assets/imgs/sec-podcasts-first-img.jpg" alt="Картина: Европа. XIX век">
                <span class="podcasts-list-item__date">14&nbsp;июня</span>
             </picture>
@@ -102,7 +101,7 @@
          </li>
          <li class="dflex podcasts-list__item">
             <picture class="podcasts-list-left-wrapper">
-               <source srcset="assets/imgs/sec-podcasts-mob-second-img.jpg" media="(max-width: 768px)">
+               <source srcset="assets/imgs/sec-podcasts-mob-second-img.jpg" media="(max-width: 400px)">
                <img src="assets/imgs/sec-podcasts-second-img.jpg" alt="Картина: Скрипач">
                <span class="podcasts-list-item__date">11&nbsp;июня</span>
             </picture>
@@ -114,7 +113,7 @@
          </li>
       <li class="dflex podcasts-list__item">
             <picture class="podcasts-list-left-wrapper">
-               <source srcset="assets/imgs/sec-podcasts-mob-third-img.jpg" media="(max-width: 768px)">
+               <source srcset="assets/imgs/sec-podcasts-mob-third-img.jpg" media="(max-width: 400px)">
                <img src="assets/imgs/sec-podcasts-third-img.jpg" alt="Картина: Толпа людей">
                <span class="podcasts-list-item__date">8&nbsp;июня</span>
                </picture>
@@ -126,7 +125,7 @@
          </li>
       <li class="dflex podcasts-list__item">
             <picture class="podcasts-list-left-wrapper">
-               <source srcset="assets/imgs/sec-podcasts-mob-fourth-img.jpg" media="(max-width: 768px)">
+               <source srcset="assets/imgs/sec-podcasts-mob-fourth-img.jpg" media="(max-width: 400px)">
                <img src="assets/imgs/sec-podcasts-fourth-img.jpg" alt="Картина: Африканская девушка">
                <span class="podcasts-list-item__date">5&nbsp;июня</span>
                </picture>
@@ -138,7 +137,7 @@
          </li>
       <li class="dflex podcasts-list__item">
             <picture class="podcasts-list-left-wrapper">
-               <source srcset="assets/imgs/sec-podcasts-mob-fifth-img.jpg" media="(max-width: 768px)">
+               <source srcset="assets/imgs/sec-podcasts-mob-fifth-img.jpg" media="(max-width: 400px)">
                <img src="assets/imgs/sec-podcasts-fifth-img.png" alt="Картина: Размышляющего человека">
                <span class="podcasts-list-item__date">2&nbsp;июня</span>
                </picture>
@@ -150,7 +149,7 @@
          </li>
       <li class="dflex podcasts-list__item">
             <picture class="podcasts-list-left-wrapper">
-               <source srcset="assets/imgs/sec-podcasts-mob-sixth-img.jpg" media="(max-width: 768px)">
+               <source srcset="assets/imgs/sec-podcasts-mob-sixth-img.jpg" media="(max-width: 400px)">
                <img src="assets/imgs/sec-podcasts-sixth-img.jpg" alt="Картина: Палитра цветов">
                <span class="podcasts-list-item__date">28&nbsp;мая</span>
                </picture>
@@ -162,7 +161,7 @@
          </li>
       <li class="dflex podcasts-list__item">
             <picture class="podcasts-list-left-wrapper">
-               <source srcset="assets/imgs/sec-podcasts-mob-seventh-img.jpg" media="(max-width: 768px)">
+               <source srcset="assets/imgs/sec-podcasts-mob-seventh-img.jpg" media="(max-width: 400px)">
                <img src="assets/imgs/sec-podcasts-seventh-img.jpg" alt="Картина: Палитра цветов">
                <span class="podcasts-list-item__date">22&nbsp;мая</span>
                </picture>
@@ -174,7 +173,7 @@
          </li>
          <li class="dflex podcasts-list__item">
             <picture class="podcasts-list-left-wrapper">
-               <source srcset="assets/imgs/sec-podcasts-mob-eightth-img.jpg" media="(max-width: 768px)">
+               <source srcset="assets/imgs/sec-podcasts-mob-eightth-img.jpg" media="(max-width: 400px)">
                <img src="assets/imgs/sec-podcasts-eightth-img.jpg" alt="Картина: Ужин">
                <span class="podcasts-list-item__date">22&nbsp;мая</span>
                </picture>
@@ -206,7 +205,6 @@
                   <a href="#" class="tvshows-item__link" aria-label="Подробнее О людях и книгах
                   Анонсируется отдельно">
                      <picture>
-                        <source srcset="#" media="(max-width: 768px)">
                         <img src="assets/imgs/sec-shows-first-img.jpg" alt="Раннее печатное производство в мастерской, гравюра">
                      </picture>
                      <div class="tvshows-item__content">
@@ -220,7 +218,6 @@
                <li class="dflex tvshows-list__item">
                   <a href="#" class="tvshows-item__link" aria-label="Подробнее о: Графомания td">
                      <picture>
-                        <source srcset="#" media="(max-width: 768px)">
                         <img src="assets/imgs/sec-shows-second-img.jpg" alt="Карикатура: писатель за пишущей машинкой и Пегас в клетке">
                      </picture>
                      <div class="tvshows-item__content">
@@ -233,7 +230,6 @@
                <li class="tvshows-list__item">
                   <a href="#" class="tvshows-item__link" aria-label="Подробнее о: Не Рим, не Троя">
                      <picture>
-                        <source srcset="#" media="(max-width: 768px)">
                         <img src="assets/imgs/sec-shows-third-img.jpg" alt="Иллюстрация: два древнеримских гражданина на фоне разрушенного Колизея">
                      </picture>
                      <div class="tvshows-item__content">
@@ -246,7 +242,6 @@
                <li class="tvshows-list__item">
                   <a href="#" class="tvshows-item__link" aria-label="Подробнее об: Эрудит">
                      <picture>
-                        <source srcset="#" media="(max-width: 768px)">
                         <img src="assets/imgs/sec-shows-fourths-img.jpg" alt="Иллюстрация: схематическое изображение головы с обозначением областей, связанных с практичностью, настойчивостью, уверенностью и другими качествами">
                      </picture>
                      <div class="tvshows-item__content">
@@ -259,7 +254,6 @@
                <li class="tvshows-list__item">
                   <a href="#" class="tvshows-item__link" aria-label="Подробнее о: Тонкости эпох">
                      <picture>
-                        <source srcset="#" media="(max-width: 768px)">
                         <img src="assets/imgs/sec-shows-fifth-img.jpg" alt="Иллюстрация: средневековый рисунок кролика, сидящего верхом на фантастическом существе">
                      </picture>
                      <div class="tvshows-item__content">
@@ -272,7 +266,6 @@
                <li class="tvshows-list__item">
                   <a href="#" class="tvshows-item__link" aria-label="Подробнее о: Живые мысли">
                      <picture>
-                        <source srcset="#" media="(max-width: 768px)">
                         <img src="assets/imgs/sec-shows-sixth-img.jpg" alt="Ёжик: наука и природа в деталях">
                      </picture>
                      <div class="tvshows-item__content">
@@ -337,7 +330,7 @@
    </div>
 </section>
 
-<section class="section-offset playlists" aria-labelledby="guests">
+<section class="section-offset playlists" aria-labelledby="playlists">
    <div class="container">
 
       <div class="dflex playlists-wrapper">
@@ -352,9 +345,22 @@
 
          <div class="playlists-right-side">
             <ul class="dflex list-reset playlists__list">
+
                <li class="playlists-list__item">
                   <picture>
-                     <img src="assets/imgs/sec-pl-first-img.jpg" alt="Фотография группы: Molchat Doma">
+                     <source srcset="assets/imgs/sec-pl-1t-1024px-112sz-img.jpg" media="(max-width: 1024px)">
+                     <img src="assets/imgs/sec-pl-1t-1920px-160sz-img.jpg" alt="Фотография группы: Ploho">
+                  </picture>
+                  <div class="playlists-item__content">
+                     <h3 class="title-reset playlists-item__title">Ploho</h3>
+                     <span>3&nbsp;последних альбома</span>
+                  </div>
+               </li>
+
+               <li class="playlists-list__item">
+                  <picture>
+                     <source srcset="assets/imgs/sec-pl-2t-1024px-112sz-img.jpg" media="(max-width: 1024px)">
+                     <img src="assets/imgs/sec-pl-2t-1920px-160sz-img.jpg" alt="Фотография группы: Molchat Doma">
                   </picture>
                   <div class="playlists-item__content">
                      <h3 class="title-reset playlists-item__title">Molchat Doma</h3>
@@ -364,16 +370,19 @@
 
                <li class="playlists-list__item">
                   <picture>
-                     <img src="assets/imgs/sec-pl-second-img.jpg" alt="Фотография группы: Motorama">
+                     <source srcset="assets/imgs/sec-pl-3t-1024px-112sz-img.jpg" media="(max-width: 1024px)">
+                     <img src="assets/imgs/sec-pl-3t-1920px-160sz-img.jpg" alt="Фотография группы: Motorama">
                   </picture>
                   <div class="playlists-item__content">
                      <h3 class="title-reset playlists-item__title">Motorama</h3>
                      <span>Все синглы</span>
                   </div>
                </li>
+
                <li class="playlists-list__item">
                   <picture>
-                     <img src="assets/imgs/sec-pl-third-img.jpg" alt="Фотография группы: Human Tetris">
+                     <source srcset="assets/imgs/sec-pl-4t-1024px-112sz-img.jpg" media="(max-width: 1024px)">
+                     <img src="assets/imgs/sec-pl-4t-1920px-160sz-img.jpg" alt="Фотография группы: Human Tetris">
                   </picture>
                   <div class="playlists-item__content">
                      <h3 class="title-reset playlists-item__title">Human Tetris</h3>
@@ -381,9 +390,11 @@
                   </div>
                </li>
 
+
                <li class="playlists-list__item">
                   <picture>
-                     <img src="assets/imgs/sec-pl-fourth-img.jpg" alt="Фотография группы: Буерак">
+                     <source srcset="assets/imgs/sec-pl-5t-1024px-112sz-img.jpg" media="(max-width: 1024px)">
+                     <img src="assets/imgs/sec-pl-5t-1920px-160sz-img.jpg" alt="Фотография группы: Буерак">
                   </picture>
                   <div class="playlists-item__content">
                      <h3 class="title-reset playlists-item__title">Буерак</h3>
@@ -393,16 +404,19 @@
 
                <li class="playlists-list__item">
                   <picture>
-                     <img src="assets/imgs/sec-pl-fifth-img.jpg" alt="Фотография группы: Июльские Дни">
+                     <source srcset="assets/imgs/sec-pl-6t-1024px-112sz-img.jpg" media="(max-width: 1024px)">
+                     <img src="assets/imgs/sec-pl-6t-1920px-160sz-img.jpg" alt="Фотография группы: Июльские Дни">
                   </picture>
                   <div class="playlists-item__content">
-                     <h3 class="title-reset playlists-item__title">Июльские Дни</h3>
+                     <h3 class="title-reset playlists-item__title">Июльские Дни</h3>
                      <span>Альбом &laquo;Колокол&raquo;</span>
                   </div>
                </li>
+
                <li class="playlists-list__item">
                   <picture>
-                     <img src="assets/imgs/sec-pl-sixth-img.jpg" alt="Фотография группы: Joy Division">
+                     <source srcset="assets/imgs/sec-pl-6t-1024px-112sz-img.jpg" media="(max-width: 1024px)">
+                     <img src="assets/imgs/sec-pl-6t-1920px-160sz-img.jpg" alt="Фотография группы: Joe Division">
                   </picture>
                   <div class="playlists-item__content">
                      <h3 class="title-reset playlists-item__title">Joy Division</h3>
@@ -412,7 +426,8 @@
 
                <li class="playlists-list__item">
                   <picture>
-                     <img src="assets/imgs/sec-pl-seventh-img.jpg" alt="Фотография группы: The Cure">
+                     <source srcset="assets/imgs/sec-pl-8t-1024px-112sz-img.jpg" media="(max-width: 1024px)">
+                     <img src="assets/imgs/sec-pl-8t-1920px-160sz-img.jpg" alt="Фотография группы: The Cure">
                   </picture>
                   <div class="playlists-item__content">
                      <h3 class="title-reset playlists-item__title">The Cure</h3>
@@ -422,7 +437,8 @@
 
                <li class="playlists-list__item">
                   <picture>
-                     <img src="assets/imgs/sec-pl-eightth-img.jpg" alt="Фотография группы: New Order">
+                     <source srcset="assets/imgs/sec-pl-9t-1024px-112sz-img.jpg" media="(max-width: 1024px)">
+                     <img src="assets/imgs/sec-pl-9t-1920px-160sz-img.jpg" alt="Фотография группы: New Order">
                   </picture>
                   <div class="playlists-item__content">
                      <h3 class="title-reset playlists-item__title">New Order</h3>
@@ -431,25 +447,30 @@
                </li>
                <li class="playlists-list__item">
                   <picture>
-                     <img src="assets/imgs/sec-pl-nineth-img.jpg" alt="Фотография группы: Bauhaus">
+                     <source srcset="assets/imgs/sec-pl-10t-1024px-112sz-img.jpg" media="(max-width: 1024px)">
+                     <img src="assets/imgs/sec-pl-10t-1920px-160sz-img.jpg" alt="Фотография группы: Bauhaus">
                   </picture>
                   <div class="playlists-item__content">
                      <h3 class="title-reset playlists-item__title">Bauhaus</h3>
                      <span>Все синглы</span>
                   </div>
                </li>
+
                <li class="playlists-list__item">
                   <picture>
-                     <img src="assets/imgs/sec-pl-tenth-img.jpg" alt="Фотография группы: The Smiths ">
+                     <source srcset="assets/imgs/sec-pl-11t-1024px-112sz-img.jpg" media="(max-width: 1024px)">
+                     <img src="assets/imgs/sec-pl-11t-1920px-160sz-img.jpg" alt="Фотография группы: The Smiths ">
                   </picture>
                   <div class="playlists-item__content">
                      <h3 class="title-reset playlists-item__title">The Smiths</h3>
                      <span>Все синглы</span>
                   </div>
                </li>
+
                <li class="playlists-list__item">
                   <picture>
-                     <img src="assets/imgs/sec-pl-eleventh-img.jpg" alt="Фотография группы: Gang Of Four">
+                     <source srcset="assets/imgs/sec-pl-12t-1024px-112sz-img.jpg" media="(max-width: 1024px)">
+                     <img src="assets/imgs/sec-pl-12t-1920px-160sz-img.jpg" alt="Фотография группы: Gang Of Four">
                   </picture>
                   <div class="playlists-item__content">
                      <h3 class="title-reset playlists-item__title">Gang Of&nbsp;Four</h3>
@@ -518,33 +539,37 @@
          <ul class="dflex list-reset about-us__list">
             <li class="dflex about-us__item">
                <picture>
-                  <source srcset="./assets/imgs/sec-about-us-first-img.jpg">
-                  <img class="about-us-item__img" src="./assets/imgs/sec-about-us-first-img.jpg" alt="Фотография: Дмитрий Гутенберг">
-               </picture>
+                  <source srcset="assets/imgs/sec-about-us-1t-768px-img.jpg" media="(max-width: 1000px)">
+                  <source srcset="assets/imgs/sec-about-us-1t-1024px-img.jpg" media="(max-width: 1150px)">
+                  <img class="about-us-item__img" src="./assets/imgs/sec-about-us-1t-1920px-img.jpg" alt="Фотография: Дмитрий Гутенберг">
+                </picture>
                <h3 class="title-reset about-us-item__title">Дмитрий Гутенберг</h3>
                <p class="paragraph-reset about-us-item__descr">Эксперт (ну, почти) по&nbsp;всем вопросам (почти)</p>
             </li>
-            <li class="about-us__item">
+            <li class="dflex about-us__item">
                <picture>
-                  <source srcset="./assets/imgs/sec-about-us-second-img.jpg">
-                  <img class="about-us-item__img" src="./assets/imgs/sec-about-us-second-img.jpg" alt="Фотография: Анна Васильева">
-               </picture>
+                  <source srcset="assets/imgs/sec-about-us-2t-768px-img.jpg" media="(max-width: 1000px)">
+                  <source srcset="assets/imgs/sec-about-us-2t-1024px-img.jpg" media="(max-width: 1150px)">
+                  <img class="about-us-item__img" src="./assets/imgs/sec-about-us-2t-1920px-img.jpg" alt="Фотография: Анна Васильева">
+                </picture>
                <h3 class="title-reset about-us-item__title">Анна Васильева</h3>
                <p class="paragraph-reset about-us-item__descr">Как я&nbsp;здесь оказалась? А&nbsp;главное&nbsp;&mdash; зачем?</p>
             </li>
-            <li class="about-us__item">
+            <li class="dflex about-us__item">
                <picture>
-                  <source srcset="./assets/imgs/sec-about-us-third-img.jpg">
-                  <img class="about-us-item__img" src="./assets/imgs/sec-about-us-third-img.jpg" alt="Фотография: Пётр Дмитриевский">
-               </picture>
+                  <source srcset="assets/imgs/sec-about-us-3t-768px-img.jpg" media="(max-width: 1000px)">
+                  <source srcset="assets/imgs/sec-about-us-3t-1024px-img.jpg" media="(max-width: 1150px)">
+                  <img class="about-us-item__img" src="./assets/imgs/sec-about-us-3t-1920px-img.jpg" alt="Фотография: Дмитрий Гутенберг">
+                </picture>
                <h3 class="title-reset about-us-item__title">Пётр Дмитриевский</h3>
                <p class="paragraph-reset about-us-item__descr">Господа! Внимание! Благодарю за&nbsp;внимание!</p>
             </li>
-            <li class="about-us__item">
+            <li class="dflex about-us__item">
                <picture>
-                  <source srcset="./assets/imgs/sec-about-us-fourth-img.jpg">
-                  <img class="about-us-item__img" src="./assets/imgs/sec-about-us-fourth-img.jpg" alt="Фотография: Татьяна Флеганова">
-               </picture>
+                  <source srcset="assets/imgs/sec-about-us-4t-768px-img.jpg" media="(max-width: 1000px)">
+                  <source srcset="assets/imgs/sec-about-us-4t-1024px-img.jpg" media="(max-width: 1150px)">
+                  <img class="about-us-item__img" src="./assets/imgs/sec-about-us-4t-1920px-img.jpg" alt="Фотография: Дмитрий Гутенберг">
+                </picture>
                <h3 class="title-reset about-us-item__title">Татьяна Флеганова</h3>
                <p class="paragraph-reset about-us-item__descr">Одна я&nbsp;в&nbsp;пальто стою красивая, а&nbsp;вокруг...</p>
             </li>

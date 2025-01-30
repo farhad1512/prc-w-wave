@@ -1,7 +1,8 @@
 
 @media (max-width: 1024px) {
 
-   /* @MEDIA --- START --- HEADER SECTION --- TABLET. */
+   /*  --- END - 1024 < COMMON STYLE CONF. */
+      /*  --- START - 1024 < HEADER SEC. */
 
    .header-wrapper {
       padding: 0;
@@ -23,6 +24,7 @@
       padding: 20px 0;
 
       justify-content: space-between;
+      overflow-y: hidden;
 
       border-top: 1px solid #E6E8EC;
       border-bottom: 1px solid #E6E8EC;
@@ -32,201 +34,395 @@
       margin: 0;
    }
 
-   /* @MEDIA --- START --- HERO SEC. --- TABLET. */
-
-   .hero-title,
-   .hero-paragpraph {
-      max-width: 539px;
-   }
-
    .hero-wrapper::after {
       background-size: 256px 262px;
    }
 
-   /*  --- END - HERO SEC. */
-      /* --- START - SHOWS SECTION. */
-
-   .tvshow-list {
-      /* flex: 1 1 calc((100% - 30px) / 2);
-      ОСТАЛСЯ НА АДАПТИВЕ НЕ МОГУ РАЗОБРАТЬСЯ И СДЕЛАТЬ ЭЛАСТИЧНЫМ!
-      */
+   .about-us__form {
+      width: 100%;
+      max-width: 824px;
    }
-}
 
-@media (min-width: 768px) and (max-width: 1024px) {
-
-   /*  --- START -  768 < COMMON STYLE CONF. */
-
-  .container {
-      padding: 0 100px;
-  }
-
-  /*  --- END - 768 < COMMON STYLE CONF. */
-      /*  --- START - 768 < HEADER SEC. */
-
-   .header-wrapper {
-      padding: 0;
-      padding-top: 32px;
-  }
-
-  .header-logo__img {
-      width: 113px;
-      height: 14px;
-  }
-
-   /* @MEDIA --- START --- HERO SEC. --- TABLET. */
-
-   .hero-title,
-   .hero-paragpraph {
-      max-width: 539px;
+   .about-us__textarea {
       width: 100%;
    }
 
-   .hero-wrapper::after {
-      background-size: 256px 262px;
+   .about-us-form__input {
+      width: calc((100% - 30px) / 2);
    }
-
-   /*  --- END - HERO SEC. */
-      /* --- START - SHOWS SECTION. */
 
 }
 
 @media (max-width: 920px) {
-   .hero-wrapper::after {
-      display: none;
-   }
-
-   .podcasts-list {
+   .podcasts__list {
       flex-direction: column;
+      gap: 30px;
    }
 
-   .podcasts-item {
+   .podcasts-list__item {
       width: 100%;
    }
 
-   /* --- START - SHOWS SECTION. */
+   .hero-wrapper::after {
+      display: none;
+      /* transition:  0.2s ease-in-out; */
+
+  }
+
+  .tvshows__wrapper {
+   flex-direction: column;
+   gap: 30px;
+   width: 100%;
+}
+
+.tvshows__list {
+padding-top: 161px;
+}
+
+.tvshows__list::after {
+content: '';
+width: 1px;
+height: 1px;
+
+border-bottom: 1px solid red
+}
+
+.tvshows-archive__wrapper {
+order: 3;
+align-self: center;
+}
 
 
 }
 
-@media (max-width: 768px) { /* 768 < 320 */
+@media (min-width: 768px) and (max-width: 1024px) {
 
-   /*  --- START -  768 < COMMON STYLE CONF. */
+   /*  --- START -  768 - 1024 < COMMON STYLE CONF. */
 
    .container {
-      padding: 0 32px;
+      padding: 0;
+      padding: 0 100px;
    }
 
-   /*  --- END - 768 < COMMON STYLE CONF. */
-      /*  --- START - 768 < HEADER SEC. */
+   /*  --- END - 768 - 1024 < COMMON STYLE CONF. */
+      /*  --- START - 768 - 1024 < HEADER SEC. */
 
    .header-wrapper {
       padding: 0;
-      padding-top: 15px;
+      padding-top: 29px;
+   }
+
+   .header-logo__img {
+      width: 113px;
+      height: 14px;
+
+   }
+
+   .header-nav {
+      padding: 0;
+      padding-top: 26px;
+      width: 100%;
+
+      order: 3;
+   }
+
+   .header-list {
+      width: 100%;
+
+      padding: 0;
+      padding: 20px 0;
+
+      overflow-y: hidden;
+   }
+
+   .header-item__link {
+      font-size: 20px;
+   }
+
+   /*  */
+
+   .hero-offset {
+      padding: 0;
+      padding-top: 90px;
+      padding-bottom: 90px;
+   }
+
+   .hero__title {
+      max-width: 539px;
+      margin-bottom: 17px;
+   }
+
+   .hero__paragraph {
+      max-width: 539px;
+      margin-bottom: 20px;
+   }
+
+
+   /*  --- END - HERO (768 - 1024) SEC. */
+   /* --- START - PODCASTS (768 - 1024) SECTION. */
+
+   .podcasts-list-item-right-wrapper {
+      padding: 0;
+      padding: 40px 0 40px 30px;
+}
+
+      /* --- START - SHOWS SECTION. */
+
+   .tvshows-list__item {
+      flex: 1 1 calc((100% - 30px) / 2);
+   }
+
+   /*  --- END - SHOWS 768 -- 1024 SEC. */
+      /* --- START - GUESTS 768 -- 1024 SECTION. */
+
+   .guests__descr {
+      max-width: 536px;
+   }
+
+   /*  --- END - GUESTS 768 -- 1024 SEC. */
+      /* --- START - PLAYLISTS 768 -- 1024 SECTION. */
+
+   .playlists-wrapper {
+      flex-direction: column;
+   }
+
+   .playlists-left-side {
+      margin: 0;
+      margin-bottom: 30px;
+      width: 100%;
+      flex: 0 0 100%;
+   }
+
+   .playlists__list {
+      margin: 0;
+   }
+
+   .playlists-list__item {
+      display: flex;
+
+      flex: 1 1 calc((100% - 60px) / 3);
+      max-width: calc((100% - 60px) / 3);
+   }
+
+   .playlists-item__content {
+      padding: 0;
+      padding: 35px 9px;
+
+      width: 100%;
+   }
+
+   /*  --- END - GUESTS 768 -- 1024 SEC. */
+      /* --- START - PLAYLISTS 768 -- 1024 SECTION. */
+
+   .market-left-side {
+      max-width: 397px;
+      min-height: 350px;
+
+      align-self: center;
+
+      background-position: center 73px;
+   }
+
+   .market-right-side {
+      max-width: 396px;
+   }
+
+   /*  --- END - GUESTS 768 -- 1024 SEC. */
+   /* --- START - ABOUT-US 768 -- 1024 SECTION. */
+
+   .about-us-top-wrapper {
+      width: 539px;
+   }
+}
+
+
+
+@media (max-width: 400px) {
+   .podcasts-list__item {
+      flex-direction: column;
+   }
+
+   .podcasts-list-item-right-wrapper {
+      padding: 0;
+      padding: 30px 0 30px 15px;
+   }
+
+   .podcasts-list-left-wrapper img {
+      width: 100%;
+      object-fit: contain;
+   }
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+
+   /*  --- START -  487 < COMMON STYLE CONF. */
+
+   .container {
+      padding: 0;
+      padding: 0 32px;
+   }
+
+   /*  --- END - 487 > COMMON STYLE CONF. */
+      /*  --- START - 487 > < HEADER SEC. */
+
+   .header-wrapper {
+      padding: 0;
+      padding-top: 16px;
+
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
    }
 
    .header-logo__img {
       width: 87px;
       height: 10px;
-      align-items: center;
+
    }
 
    .header-nav {
-      padding: 0;
-      padding-top: 15px;
+      padding-top: 16px;
+      width: 100%;
+
+      order: 3;
    }
 
    .header-list {
+      width: 100%;
+
       padding: 0;
-      padding-top: 17px;
-      padding-bottom: 17px;
+      padding: 13px 0;
+
+      justify-content: space-between;
+
+      border-top: 1px solid #E6E8EC;
+      border-bottom: 1px solid #E6E8EC;
 
       overflow-y: hidden;
    }
 
-   .header-list__item:not(:last-child) {
-      margin-right: 32px;
+   .header-list .header-list__item {
+      margin: 0;
    }
 
-   /*  --- END - 768 < HEADER SEC. */
-      /*  --- START - 768 < HERO SEC. */
+   .header-list .header-list__item:not(:last-child) {
+      margin-right: 24px;
+   }
 
-   .hero-wrapper {
+   .header-item__link {
+      font-size: 16px;
+   }
+
+   /*  --- END -  768 TO 1024 HEADER SEC. */
+      /*  --- START - 768 TO 1024 < HERO SEC. */
+
+   .hero-offset {
       padding: 0;
       padding-top: 40px;
       padding-bottom: 40px;
    }
 
-   .hero-title {
-      margin-bottom: 8px;
 
+
+   .hero__title {
+      margin-bottom: 8px;
       font-size: 32px;
-      font-weight: 700;
-      line-height: 100%;
    }
 
    .hero-title__span {
       font-size: 32px;
-      font-style: italic;
-      font-weight: 400;
-      line-height: 100%;
    }
 
-   .hero-paragpraph {
+   .hero__paragraph {
       max-width: 635px;
-      margin-bottom: 20px;
+      margin-bottom: 12px;
 
       font-size: 14px;
       font-weight: 400;
       line-height: 150%;
    }
 
-   .hero-paragpraph__strong {
+   .hero__paragraph__strong {
       font-size: 14px;
       font-weight: 400;
       line-height: 150%;
    }
 
-   /*  --- END - 768 < HERO SEC. */
-      /*  --- START - 768 < PODCASTS SEC. */
-
-   .podcasts-item {
-      min-height: 185px;
-      flex-direction: column;
-      align-items: stretch;
-   }
-
-   .podcasts-item-right-block {
-      max-width: 100%;
-      height: auto;
-   }
-
-   .podcasts-item-right-block img {
-      width: 100%;
-      height: auto; /* Чтобы сохранить пропорции */
-      object-fit: cover; /* Если нужно заполнение */
-   }
-
-   .podcasts-item-left-block {
-      min-height: 113px;
-   }
-
-   .podcasts-item-right-block span {
+   .hero-btn {
       padding: 0;
-      padding: 3px 9px;
+      padding: 17px 45px;
 
-      top: 0;
-      bottom: auto;
+      text-align: center;
+
+      font-size: 16px;;
+      font-weight: 500;
    }
 
-   .podcasts-during {
-      margin: 0;
-      margin-bottom: 6px;
+
+   /*  --- END - 768 TO 1024 < HERO SEC. */
+      /*  --- START - 768 TO 1024 < PODCASTS SEC. */
+
+
+
+   /*  --- END - 768 < TVSHOWS SEC. */
+      /*  --- START - 768 < GUESTS SEC. */
+
+      .guests-article__wrapper {
+         flex-direction: column;
+      }
+
+      .guests-article__descr {
+         margin-bottom: 30px;
+      }
+
+   /*  --- END - 768 < TVSHOWS SEC. */
+      /*  --- START - 768 < PLAYLISTS SEC. */
+
+   .playlists-list__item {
+      flex: 1 1 calc((100% - 30px) / 2);
+      max-width: calc((100% - 30px) / 2);
    }
 
-   .podcasts-ttile {
-      margin: 0;
-      margin-bottom: 3px;
-   }
-  }
+      /*  --- END - 768 < TVSHOWS SEC. */
+   /*  --- START - 768 < MARKET SEC. */
 
+   .market-wrapper {
+      flex-direction: column;
+   }
+
+   .market-left-side {
+      max-width: 540px;
+      min-height: 474px;
+
+      margin-bottom: 50px;
+   }
+
+   .about-us-inputs-wrapper {
+      margin-bottom: 30px;
+      flex-direction: column;
+   }
+
+   .about-us-form__input:first-of-type {
+      margin-bottom: 30px;
+   }
+
+   .about-us-form__input {
+      width: 100%;
+   }
+
+   .footer-top__social-media-wrapper {
+      margin-bottom: 30px;
+
+      align-items: center;
+      justify-content: center;
+   }
+
+   /*  --- END - 768 < TVSHOWS SEC. */
+      /*  --- START - 768 < FOOTER SEC. */
+
+   .footer-top-wrapper {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+   }
+}
