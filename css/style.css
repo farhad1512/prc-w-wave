@@ -379,6 +379,7 @@ body {
 
 .tvshows-archive__wrapper {
    position: relative;
+   width: 100%;
    max-width: 255px;
    justify-content: flex-end;
    flex-direction: column;
@@ -420,7 +421,7 @@ body {
 }
 
 .tvshows-archive-wrapper__descr {
-   min-width: 255px;
+   max-width: 255px;
 
    font-size: var(--px-sixteen);
    font-weight: 400;

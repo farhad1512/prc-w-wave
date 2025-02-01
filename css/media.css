@@ -51,6 +51,24 @@
       width: calc((100% - 30px) / 2);
    }
 
+   .tvshows-list__item {
+      flex: 1 1 calc((100% - 30px) / 2);
+   }
+
+   .guests-article__wrapper {
+      align-items: center;
+      justify-content: center;
+   }
+
+   .guests-info__wrapper {
+      max-width: 545px;
+   }
+
+   .guests-article__descr {
+      margin: 0;
+      margin-bottom: 30px;
+   }
+
 }
 
 @media (max-width: 920px) {
@@ -73,26 +91,34 @@
    flex-direction: column;
    gap: 30px;
    width: 100%;
-}
+  }
 
-.tvshows__list {
-padding-top: 161px;
-}
+  .tvshows-archive__wrapper {
+      padding-left: 20px;
+      transform: translateX(30px);
+  }
 
-.tvshows__list::after {
-content: '';
-width: 1px;
-height: 1px;
+   .tvshows-archive__wrapper::before {
+      bottom: 7px;
+      left: -70px;
+   }
 
-border-bottom: 1px solid red
-}
+   .tvshows__list {
+      padding-top: 161px;
+   }
 
-.tvshows-archive__wrapper {
-order: 3;
-align-self: center;
-}
+   .tvshows__list::after {
+      content: '';
+      width: 1px;
+      height: 1px;
 
+      border-bottom: 1px solid red
+   }
 
+   .tvshows-archive__wrapper {
+      order: 3;
+      align-self: center;
+   }
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -168,15 +194,17 @@ align-self: center;
 
       /* --- START - SHOWS SECTION. */
 
-   .tvshows-list__item {
-      flex: 1 1 calc((100% - 30px) / 2);
-   }
+
 
    /*  --- END - SHOWS 768 -- 1024 SEC. */
       /* --- START - GUESTS 768 -- 1024 SECTION. */
 
-   .guests__descr {
+   /* .guests__descr {
       max-width: 536px;
+   } */
+
+   .guests-article__wrapper {
+      flex-direction: column;
    }
 
    /*  --- END - GUESTS 768 -- 1024 SEC. */
@@ -235,8 +263,6 @@ align-self: center;
    }
 }
 
-
-
 @media (max-width: 400px) {
    .podcasts-list__item {
       flex-direction: column;
@@ -251,6 +277,75 @@ align-self: center;
       width: 100%;
       object-fit: contain;
    }
+
+   .tvshows__title {
+      font-size: 24px;
+      font-weight: 400;
+      line-height: 100%;
+   }
+
+   .tvshows__list {
+      padding: 0;
+      padding-top: 50px;
+   }
+
+   .tvshows-item__content {
+      padding: 10px;
+   }
+
+   .tvshows-item__title {
+      font-size: 12px;
+      font-weight: 500;
+   }
+
+   .tvshows-item__descr {
+      margin: 0;
+
+      font-size: 9px;
+      font-weight: 400;
+   }
+
+   .tvshows-list__item span {
+      font-size: 12px;
+      font-weight: 400;
+   }
+
+   .tvshows-item__content {
+      min-height: 99px;
+   }
+
+   .tvshows-archive__wrapper {
+      max-width: 166px;
+
+      flex-direction: column-reverse;
+   }
+
+   .tvshows-archive-wrapper__descr {
+      width: 166px;
+      max-width: 166px;
+      margin-bottom: 7px;
+
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 150%; /* 21px */
+   }
+
+   .tvshows-archive-wrapper__btn {
+      margin-top: auto;
+      min-width: 110px;
+
+      padding: 0;
+      padding: 17px 43px;
+      margin: 0;
+   }
+
+
+   .tvshows-archive__wrapper::before {
+      /* width: 77px;
+      height: 105px; */
+   }
+
+
 }
 
 @media (min-width: 320px) and (max-width: 768px) {
@@ -365,14 +460,25 @@ align-self: center;
 
 
    /*  --- END - 768 < TVSHOWS SEC. */
+
+   .tvshows-list__item {
+
+   }
+
       /*  --- START - 768 < GUESTS SEC. */
 
-      .guests-article__wrapper {
+      .guests-article__wrapper  {
+         align-items: center;
+         justify-content: center;
          flex-direction: column;
       }
 
       .guests-article__descr {
          margin-bottom: 30px;
+      }
+
+      .guests-article__wrapper {
+         max-width: 255px;
       }
 
    /*  --- END - 768 < TVSHOWS SEC. */
