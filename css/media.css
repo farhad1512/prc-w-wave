@@ -1,18 +1,37 @@
+@media (max-width: 1150px) {
+   .about-us__item {
+      max-width: 397px;
+   }
+}
+
 @media (max-width: 1024px) {
 
-   /*  --- START - 1024 < HEADER SEC. */
+   /*  --- START -  1024 > COMMON STYLE CONF. */
+
+   .container {
+      padding: 0;
+      padding: 0 100px;
+   }
+
+   /*  --- END -- 1024 -- COMMON STYLE CONF. */
+      /*  --- START - 1024 > HEADER SEC. */
 
    .header-wrapper {
       padding: 0;
-      padding-top: 33px;
+      padding-top: 30px;
 
       justify-content: space-between;
       align-items: center;
       flex-wrap: wrap;
    }
 
+   .header-logo__img {
+      width: 113px;
+      height: 14px;
+   }
+
    .header-nav {
-      padding-top: 33px;
+      padding-top: 27px;
       width: 100%;
 
       order: 3;
@@ -28,18 +47,144 @@
       border-bottom: 1px solid #E6E8EC;
    }
 
+   .header-item__link {
+      font-size: 20px;
+   }
+
    .header .header-list__item {
       margin: 0;
    }
 
-
-   /*  --- START - 1024 < HERO SEC. */
+   /*  --- END -- 1024 -- HEADER SEC. */
+      /*  --- START -- 1024 -- HERO SEC. */
 
    .hero-wrapper::after {
-      background-size: 256px 262px;
+      background-size: 258px 277px;
    }
 
-   /*  --- START - 1024 < ABOUT US SEC. */
+   .hero-offset {
+      padding: 0;
+      padding-top: 90px;
+      padding-bottom: 90px;
+   }
+
+   .hero__title {
+      max-width: 539px;
+      margin-bottom: 17px;
+   }
+
+   .hero__paragraph {
+      max-width: 539px;
+      margin-bottom: 20px;
+   }
+
+   /*  --- END -- 1024 -- HERO SEC. */
+      /*  --- START -- 1024 -- PODCAST SEC. */
+
+   .podcasts-list-item-right-wrapper {
+      padding: 0;
+      padding: 40px 0 40px 30px;
+   }
+
+   /*  --- END -- 1024 -- PODCAST SEC. */
+      /*  --- START -- 1024 -- TVSHOWS SEC. */
+
+   .tvshows-list__item {
+      flex: 1 1 calc((100% - 30px) / 2);
+   }
+
+   /*  --- END -- 1024 -- HERO SEC. */
+      /*  --- START --  1024 -- GUESTS SEC. */
+
+
+   /* .guests-info__wrapper {
+      max-width: 545px;
+   } */
+
+   .guests-article__descr {
+      margin: 0;
+      margin-bottom: 30px;
+   }
+
+   .guests__descr {
+      max-width: 530px;
+   }
+
+   /*  --- END -- 1024 -- GUESTS SEC. */
+      /*  --- START --  1024 -- PLAYLISTS SEC. */
+
+   .playlists-wrapper {
+      flex-direction: column;
+   }
+
+   .playlists-list__item {
+      min-height: fit-content;
+      display: flex;
+      flex-direction: row;
+   }
+
+   .playlists-item__content {
+      padding: 0;
+      padding: 35px 5px 5px 5px;
+   }
+
+   .playlists-left-side {
+      margin: 0;
+      flex: 1 1;
+   }
+
+   .playlists-left-side {
+      margin-bottom: 30px;
+   }
+
+   .playlists__list {
+      margin: 0;
+   }
+
+   .playlists-list__item {
+      flex: 1 1 calc((100% - 30px) / 3);
+      max-width: calc((96% - 30px) / 3);
+   }
+
+   .playlists-item__content {
+      padding: 0;
+      padding: 35px 5px 5px 5px;
+   }
+
+   /*  --- END -- 1024 -- PLAYLISTS SEC. */
+      /*  --- START-- 1024 -- MARKET SEC. */
+
+   .market-left-side {
+      max-width: 397px;
+      min-height: 350px;
+
+      align-self: center;
+
+      background-position: center 83px;
+   }
+
+   .market-right-side {
+      max-width: 396px;
+   }
+
+   .market-right-side::after {
+      top: 109px;
+      left: 0;
+   }
+
+   .market-right-side span {
+      margin-bottom: 30px;
+   }
+
+   /*  --- END -- 1024 -- MARKET SEC. */
+      /*  --- START-- 1024 -- ABOUTUS SEC. */
+
+   .about-us-top-wrapper::after {
+      top: -24px;
+      right: -285px;
+      background: url(../assets/imgs/about-us-1024px-spirals.png) no-repeat center right;
+  }
+   }
 
    .about-us__form {
       width: 100%;
@@ -54,28 +199,9 @@
       width: calc((100% - 30px) / 2);
    }
 
-   /*  --- START - 1024 < TVSHOWS SEC. */
-
-   .tvshows-list__item {
-      flex: 1 1 calc((100% - 30px) / 2);
+   .about-us-top-wrapper {
+      width: 539px;
    }
-
-   /*  --- START - 1024 < GUEST SEC. */
-
-   .guests-article__wrapper {
-      align-items: center;
-      justify-content: center;
-   }
-
-   .guests-info__wrapper {
-      max-width: 545px;
-   }
-
-   .guests-article__descr {
-      margin: 0;
-      margin-bottom: 30px;
-   }
-
 }
 
 @media (max-width: 920px) {
@@ -127,148 +253,6 @@
    .tvshows-archive__wrapper {
       order: 3;
       align-self: center;
-   }
-}
-
-@media (max-width: 1024px) {
-   /*  --- START -  768 - 1024 > COMMON STYLE CONF. */
-
-   .container {
-      padding: 0;
-      padding: 0 100px;
-   }
-
-   /*  --- START -- 768 > 1024 -- HEADER SEC. */
-      /*  --- END -- 768 > 1024 -- SEC CONF. */
-
-   .header-wrapper {
-      padding: 0;
-      padding-top: 29px;
-   }
-
-   .header-logo__img {
-      width: 113px;
-      height: 14px;
-   }
-
-   .header-nav {
-      padding: 0;
-      padding-top: 26px;
-      width: 100%;
-
-      order: 3;
-   }
-
-   .header-list {
-      width: 100%;
-
-      padding: 0;
-      padding: 20px 0;
-
-      overflow-y: hidden;
-   }
-
-   .header-item__link {
-      font-size: 20px;
-   }
-
-   /*  --- START -- 768 > 1024 -- HEADER SEC. */
-      /*  --- END -- 768 > 1024 -- HERO SEC. */
-
-   .hero-offset {
-      padding: 0;
-      padding-top: 90px;
-      padding-bottom: 90px;
-   }
-
-   .hero__title {
-      max-width: 539px;
-      margin-bottom: 17px;
-   }
-
-   .hero__paragraph {
-      max-width: 539px;
-      margin-bottom: 20px;
-   }
-
-   /*  --- START -- 768 > 1024 -- HERO SEC. */
-      /*  --- END -- 768 > 1024 -- PODCASTS SEC. */
-
-   .podcasts-list-item-right-wrapper {
-      padding: 0;
-      padding: 40px 0 40px 30px;
-}
-
-   /*  --- START -- 768 > 1024 -- PODCASTS SEC. */
-      /*  --- END -- 768 > 1024 -- GUESTS SEC. */
-
-   .guests-article__wrapper {
-      flex-direction: column;
-   }
-
-   /*  --- START -- 768 > 1024 -- GUESTS SEC. */
-      /*  --- END -- 768 > 1024 -- PLAYLISTS SEC. */
-
-   .playlists-wrapper {
-      flex-direction: column;
-   }
-
-   .playlists-list__item {
-      display: flex;
-      flex-direction: row;
-   }
-
-   .playlists-item__content {
-      padding: 0;
-      padding: 35px 5px 5px 5px;
-   }
-
-   .playlists-left-side {
-      margin: 0;
-      flex: 1 1;
-   }
-
-   .playlists-left-side {
-      margin-bottom: 30px;
-   }
-
-   .playlists__list {
-      margin: 0;
-   }
-
-   .playlists-list__item {
-      flex: 1 1 calc((100% - 30px) / 2);
-      max-width: calc((100% - 30px) / 2);
-   }
-
-   .playlists-item__content {
-      padding: 0;
-      padding: 35px 5px 5px 5px;
-
-      width: 100%;
-   }
-
-   /*  --- START -- 768 > 1024 -- PLAYLISTS SEC. */
-      /*  --- END -- 768 > 1024 -- MARKET SEC. */
-
-   .market-left-side {
-      max-width: 397px;
-      min-height: 350px;
-
-      align-self: center;
-
-      background-position: center 73px;
-   }
-
-   .market-right-side {
-      max-width: 396px;
-   }
-
-   /*  --- START -- 768 > 1024 -- MARKET SEC. */
-      /*  --- END -- 768 > 1024 -- ABOUT US SEC. */
-
-   .about-us-top-wrapper {
-      width: 539px;
    }
 }
 
@@ -426,8 +410,6 @@
       padding-bottom: 40px;
    }
 
-
-
    .hero__title {
       margin-bottom: 8px;
       font-size: 32px;
@@ -563,9 +545,11 @@
       line-height: 100%; /* 16px */
    }
 
-
-
    /*  */
+
+   .about-us-top__content p {
+
+   }
 
    .about-us-inputs-wrapper {
       margin-bottom: 30px;
