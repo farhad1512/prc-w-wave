@@ -1,8 +1,3 @@
-@media (max-width: 1150px) {
-   .about-us__item {
-      max-width: 397px;
-   }
-}
 
 @media (max-width: 1024px) {
 
@@ -89,19 +84,14 @@
    /*  --- END -- 1024 -- PODCAST SEC. */
       /*  --- START -- 1024 -- TVSHOWS SEC. */
 
-   .tvshows-list__item {
+   .tvshows-list-item {
       flex: 1 1 calc((100% - 30px) / 2);
    }
 
    /*  --- END -- 1024 -- HERO SEC. */
       /*  --- START --  1024 -- GUESTS SEC. */
 
-
-   /* .guests-info__wrapper {
-      max-width: 545px;
-   } */
-
-   .guests-article__descr {
+   .guests-article-descr {
       margin: 0;
       margin-bottom: 30px;
    }
@@ -117,13 +107,13 @@
       flex-direction: column;
    }
 
-   .playlists-list__item {
+   .playlists-list-item {
       min-height: fit-content;
       display: flex;
       flex-direction: row;
    }
 
-   .playlists-item__content {
+   .playlists-item-content {
       padding: 0;
       padding: 35px 5px 5px 5px;
    }
@@ -141,12 +131,12 @@
       margin: 0;
    }
 
-   .playlists-list__item {
+   .playlists-list-item {
       flex: 1 1 calc((100% - 30px) / 3);
       max-width: calc((96% - 30px) / 3);
    }
 
-   .playlists-item__content {
+   .playlists-item-content {
       padding: 0;
       padding: 35px 5px 5px 5px;
    }
@@ -155,9 +145,6 @@
       /*  --- START-- 1024 -- MARKET SEC. */
 
    .market-left-side {
-      max-width: 397px;
-      min-height: 350px;
-
       align-self: center;
 
       background-position: center 83px;
@@ -177,13 +164,42 @@
    }
 
    /*  --- END -- 1024 -- MARKET SEC. */
-      /*  --- START-- 1024 -- ABOUTUS SEC. */
+      /*  --- START-- 1024 -- ABOUT-US SEC. */
+
+   .about-us__title {
+      margin: 0;
+      margin-bottom: 14px;
+   }
+
+   .about-us-top-content {
+      max-width: 539px;
+   }
+
+   .about-us-top__content b {
+      margin-bottom: 11px;
+   }
 
    .about-us-top-wrapper::after {
-      top: -24px;
-      right: -285px;
-      background: url(../assets/imgs/about-us-1024px-spirals.png) no-repeat center right;
+      top: -25px;
+      right: -95px;
+
+      background-image: url('../assets/imgs/about-us-1024px-spirals.png');
+      background-repeat: no-repeat;
+      background-size: contain;
+   }
+
+   .about-us__item {
+      flex: 0 1 ((100% - 60px) / 2);
+      width: calc((100% - 60px) / 2);
+   }
+
+   .about-us__item {
+      margin: 0;
+      margin-right: 30px;
   }
+
+   .about-us__item:nth-child(-n+2) {
+      margin-bottom: 30px;
    }
 
    .about-us__form {
@@ -195,45 +211,87 @@
       width: 100%;
    }
 
-   .about-us-form__input {
+   .about-us-form-input {
       width: calc((100% - 30px) / 2);
-   }
-
-   .about-us-top-wrapper {
-      width: 539px;
    }
 }
 
-@media (max-width: 920px) {
+@media (max-width: 1010px) {
+   /*  --- START -  1024 > COMMON STYLE CONF. */
+
+   /*  --- END -- 1024 -- COMMON STYLE CONF. */
+      /*  --- START - 1024 > GUESTS SEC. */
+      .guests__article {
+         margin: 0;
+         margin-bottom: 50px;
+      }
+
+      .guests-article-wrapper  {
+         flex-direction: column;
+      }
+
+      /* .guests-article-wrapper img {
+         width: 100%;
+         object-fit: contain;
+      } */
+
+      .guests-article-descr {
+         margin: 0;
+         margin-bottom: 30px;
+      }
+   /*  --- END -- 1024 -- GUESTS SEC. */
+}
+
+@media (max-width: 975px) {
 
    .hero-wrapper::after {
       display: none;
-  }
+   }
 
-   /*  --- START - 920 < PODCASTS SEC. */
+   /*  --- START --- PODCASTS SEC. */
    .podcasts__list {
       flex-direction: column;
       gap: 30px;
    }
 
-   .podcasts-list__item {
+   .podcasts-list-item {
+      width: 100%;
+      position: relative;
+      height: 100%;
+
+      object-fit: contain;
+   }
+
+   .playlists-wrapper {
+      flex-direction: column;
+      flex-wrap: wrap;
+   }
+
+   .playlists-left-side {
+      margin: 0;
+      margin-bottom: 30px;
+      flex: 0 0;
+   }
+
+   .playlists-list-item {
+      flex: 1 1 calc((100% - 30px) / 2);
+      max-width: calc((100% - 30px) / 2);
+   }
+
+   /*  --- START --- TVSHOWS SEC. */
+
+   .tvshows__wrapper {
+      flex-direction: column;
+      gap: 30px;
       width: 100%;
    }
 
-   /*  --- START - 1024 < TVSHOWS SEC. */
-
-  .tvshows__wrapper {
-   flex-direction: column;
-   gap: 30px;
-   width: 100%;
-  }
-
-  .tvshows-archive__wrapper {
+  .tvshows-archive-wrapper {
       padding-left: 20px;
       transform: translateX(30px);
-  }
+   }
 
-   .tvshows-archive__wrapper::before {
+   .tvshows-archive-wrapper::before {
       bottom: 7px;
       left: -70px;
    }
@@ -250,95 +308,64 @@
       border-bottom: 1px solid red
    }
 
-   .tvshows-archive__wrapper {
+   .tvshows-archive-wrapper {
       order: 3;
       align-self: center;
    }
-}
 
-@media (max-width: 400px) {
-   .podcasts-list__item {
+   .market-wrapper {
+      width: 100%;
       flex-direction: column;
    }
 
-   .podcasts-list-item-right-wrapper {
-      padding: 0;
-      padding: 30px 0 30px 15px;
+   .market-left-side {
+      max-width: 540px;
+      min-height: 474px;
+      margin: 0;
+      margin-bottom: 50px;
+
+      align-self: center;
    }
 
-   .podcasts-list-left-wrapper img {
+   .market-right-side {
       width: 100%;
-      object-fit: contain;
+      max-width: 540px;
+      align-self: center;
    }
 
-   .tvshows__title {
+   .market-right-side::after {
+
+      top: 114px;
+      right: 0;
+      left: 0;
+
+      overflow: hidden;
+   }
+
+   .market-right-side-title {
       font-size: 24px;
       font-weight: 400;
-      line-height: 100%;
+      line-height: 100%; /* 24px */
    }
 
-   .tvshows__list {
-      padding: 0;
-      padding-top: 50px;
+   .market-right-side-descr {
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 160%; /* 22.4px */
    }
 
-   .tvshows-item__content {
-      padding: 10px;
-   }
-
-   .tvshows-item__title {
-      font-size: 12px;
+   .market-right-side span {
+      font-size: 24px;
       font-weight: 500;
    }
 
-   .tvshows-item__descr {
-      margin: 0;
+   .market-btn {
+      padding: 15px 5px;
 
-      font-size: 9px;
-      font-weight: 400;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 100%; /* 16px */
    }
-
-   .tvshows-list__item span {
-      font-size: 12px;
-      font-weight: 400;
-   }
-
-   .tvshows-item__content {
-      min-height: 99px;
-   }
-
-   .tvshows-archive__wrapper {
-      max-width: 166px;
-
-      flex-direction: column-reverse;
-   }
-
-   .tvshows-archive-wrapper__descr {
-      width: 166px;
-      max-width: 166px;
-      margin-bottom: 7px;
-
-      font-size: 14px;
-      font-weight: 400;
-      line-height: 150%; /* 21px */
-   }
-
-   .tvshows-archive-wrapper__btn {
-      margin-top: auto;
-      min-width: 110px;
-
-      padding: 0;
-      padding: 17px 43px;
-      margin: 0;
-   }
-
-
-   .tvshows-archive__wrapper::before {
-      /* width: 77px;
-      height: 105px; */
-   }
-
-
 }
 
 @media (max-width: 768px) {
@@ -454,117 +481,49 @@
 
       /*  --- START - 768 < GUESTS SEC. */
 
-      .guests-article__wrapper  {
-         align-items: center;
-         justify-content: center;
-         flex-direction: column;
-      }
 
-      .guests-article__descr {
-         margin-bottom: 30px;
-      }
-
-      .guests-article__wrapper {
-         max-width: 255px;
-      }
 
    /*  --- END - 768 < TVSHOWS SEC. */
       /*  --- START - 768 < PLAYLISTS SEC. */
 
-   .playlists-wrapper {
-      flex-direction: column;
-      flex-wrap: wrap;
-   }
-
-   .playlists-left-side {
-      margin: 0;
-      margin-bottom: 30px;
-      flex: 0 0;
-   }
-
-   .playlists-list__item {
-      flex: 1 1 calc((100% - 30px) / 2);
-      max-width: calc((100% - 30px) / 2);
-   }
+      .playlists-list-item {
+         flex-direction: column;
+      }
 
       /*  --- END - 768 < TVSHOWS SEC. */
-   /*  --- START - 768 < MARKET SEC. */
+   /*  --- START - 768 < ABOUT-US SEC. */
 
-   .market-wrapper {
-      flex-direction: column;
-   }
 
-   .market-left-side {
-      width: 256px;
-      height: 225px;
-
-      margin: 0;
-      margin-bottom: 50px;
-
-      align-self: center;
-   }
-
-   .market-right-side {
-      max-width: 100%;
-   }
-
-   .market-right-side::after {
-      width: 1920px;
-
-      top: 65px;
-      right: 0;
-      left: 0;
-
-      overflow: hidden;
-   }
-
-   .market-right-side__title {
-      font-size: 24px;
-      font-weight: 400;
-      line-height: 100%; /* 24px */
-   }
-
-   .market-right-side__descr {
-      font-size: 14px;
-      font-weight: 400;
-      line-height: 160%; /* 22.4px */
-   }
-
-   .market-right-side span {
-      margin-bottom: 20px;
-
-      font-size: 24px;
-      font-weight: 500;
-   }
-
-   .market-btn {
-      padding: 15px 5px;
-
-      font-size: 16px;
-      font-weight: 500;
-      line-height: 100%; /* 16px */
-   }
-
-   /*  */
-
-   .about-us-top__content p {
-
-   }
 
    .about-us-inputs-wrapper {
       margin-bottom: 30px;
       flex-direction: column;
    }
 
-   .about-us-form__input:first-of-type {
+   .about-us-form-input:first-of-type {
       margin-bottom: 30px;
    }
 
-   .about-us-form__input {
+   .about-us-form-input {
       width: 100%;
    }
 
-   .footer-top__social-media-wrapper {
+   .about-us-top-wrapper {
+      margin-bottom: 200px;
+   }
+
+   .about-us-top-wrapper::after {
+      width: 100%;
+      height: 100%;
+      top: 211px;
+      left: -32px;
+      background-image: url(../assets/imgs/about-us-768px-spirals.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+  }
+
+
+   .footer-top-social-media-wrapper {
       margin-bottom: 30px;
 
       align-items: center;
@@ -579,4 +538,91 @@
       justify-content: center;
       align-items: center;
    }
+}
+
+@media (max-width: 600px) {
+
+
+   .podcasts-list-item {
+      flex-direction: column;
+   }
+
+   .podcasts-list-item-right-wrapper {
+      padding: 0;
+      padding: 30px 0 30px 15px;
+   }
+
+   .podcasts-list-left-wrapper img {
+      width: 100%;
+      object-fit: contain;
+   }
+
+   .tvshows__title {
+      font-size: 24px;
+      font-weight: 400;
+      line-height: 100%;
+   }
+
+   .tvshows__list {
+      padding: 0;
+      padding-top: 50px;
+   }
+
+   .tvshows-item-content {
+      padding: 10px;
+   }
+
+   .tvshows-item-title {
+      font-size: 12px;
+      font-weight: 500;
+   }
+
+   .tvshows-item-descr {
+      margin: 0;
+
+      font-size: 9px;
+      font-weight: 400;
+   }
+
+   .tvshows-list__item span {
+      font-size: 12px;
+      font-weight: 400;
+   }
+
+   .tvshows-item-content {
+      min-height: 99px;
+   }
+
+   .tvshows-archive-wrapper {
+      max-width: 166px;
+
+      flex-direction: column-reverse;
+   }
+
+   .tvshows-archive-wrapper-descr {
+      width: 166px;
+      max-width: 166px;
+      margin-bottom: 7px;
+
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 150%; /* 21px */
+   }
+
+   .tvshows-archive-wrapper-btn {
+      margin-top: auto;
+      min-width: 110px;
+
+      padding: 0;
+      padding: 17px 43px;
+      margin: 0;
+   }
+
+
+   .tvshows-archive__wrapper::before {
+      /* width: 77px;
+      height: 105px; */
+   }
+
+
 }

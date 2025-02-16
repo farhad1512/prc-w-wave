@@ -58,11 +58,12 @@ legend {
   white-space: nowrap;
 }
 
-/* img,
+img,
 svg {
-   width: 100%;
-   height: 100%;
-} */
+   /* width: 100%;
+   height: 100%; */
+   /* object-fit: contain; */
+}
 
 
 .dflex {
@@ -172,7 +173,7 @@ body {
    padding: 34px 0 34px 0;
 }
 
-.header-logo__img {
+.header-logo-img {
    width: 160px;
    height: 20px;
    margin-right: 80px;
@@ -196,7 +197,7 @@ body {
    margin-right: 59px;
 }
 
-.header-item__link {
+.header-item-link {
    font-size: var(--px-twenty);
    font-style: normal;
    font-weight: 400;
@@ -233,7 +234,7 @@ body {
    z-index: -1;
 }
 
-.hero__title {
+.hero-title {
    max-width: 635px;
    margin-bottom: 12px;
 
@@ -242,14 +243,14 @@ body {
    line-height: 100%;
 }
 
-.hero-title__span {
+.hero-title-span {
    font-size: 60px;
    font-style: italic;
    font-weight: 400;
    line-height: 100%;
 }
 
-.hero__paragraph {
+.hero-paragraph {
    max-width: 635px;
    margin-bottom: 45px;
 
@@ -258,7 +259,7 @@ body {
    line-height: 150%;
 }
 
-.hero-paragraph__strong {
+.hero-paragraph-strong {
    font-size: var(--px-sixteen);
    font-weight: 400;
    line-height: 150%;
@@ -301,7 +302,8 @@ body {
 
 }
 
-.podcasts-list__item {
+.podcasts-list-item {
+   position: relative;
    width: calc(50% - 15px);
    min-height: 140px;
    background-color: var(--bg-main-clr);
@@ -309,7 +311,6 @@ body {
 }
 
 .podcasts-list-left-wrapper {
-   position: relative;
    height: 100%;
    object-fit: contain;
 }
@@ -335,7 +336,7 @@ body {
    padding: 40px 30px;
 }
 
-.podcasts-list__time {
+.podcasts-list-time {
    display: inline-block;
    margin-bottom: 7px;
 
@@ -345,7 +346,7 @@ body {
    color: var(--clr-def-sec-txt);
 }
 
-.podcasts-list__title {
+.podcasts-list-title {
    margin-bottom: 4px;
 
    font-size: var(--px-twenty);
@@ -354,7 +355,7 @@ body {
    color: var(--clr-def-sec-txt);
 }
 
-.podcasts-list__author {
+.podcasts-list-author {
    font-size: var(--px-sixteen);
    font-weight: 400;
    line-height: normal;
@@ -378,7 +379,7 @@ body {
    min-height: 550px;
 }
 
-.tvshows-archive__wrapper {
+.tvshows-archive-wrapper {
    position: relative;
    width: 100%;
    max-width: 255px;
@@ -391,7 +392,7 @@ body {
    color: var(--clr-additional-txt);
 }
 
-.tvshows-archive__wrapper::before {
+.tvshows-archive-wrapper::before {
    content: '';
    position: absolute;
    width: 65px;
@@ -405,7 +406,7 @@ body {
    background-repeat: no-repeat;
 }
 
-.tvshows-archive-wrapper__btn {
+.tvshows-archive-wrapper-btn {
    max-width: 160px;
    padding: 12px 40px;
    margin-bottom: 12px;
@@ -421,7 +422,7 @@ body {
    border: 2px solid #121723;
 }
 
-.tvshows-archive-wrapper__descr {
+.tvshows-archive-wrapper-descr {
    max-width: 255px;
 
    font-size: var(--px-sixteen);
@@ -430,7 +431,7 @@ body {
    color: var(--clr-additional-txt);
 }
 
-.tvshow-right__wrapper {
+.tvshow-right-wrapper {
    min-height: 550px;
 }
 
@@ -439,23 +440,23 @@ body {
    gap: 30px;
 }
 
-.tvshows-list__item {
+.tvshows-list-item {
    flex: 1 1 calc((100% - 60px) / 3);
 }
 
-.tvshows-list__item picture {
+.tvshows-list-item picture {
    display: block;
    width: 100%;
 }
 
-.tvshows-list__item img {
+.tvshows-list-item img {
    display: block;
    width: 100%;
 
    object-fit: cover;
 }
 
-.tvshows-item__link {
+.tvshows-item-link {
    font-size: var(--px-sixteen);
    font-weight: 400;
    font-style: italic;
@@ -463,13 +464,26 @@ body {
    color: var(--clr-def-sec-txt);
 }
 
-.tvshows-item__content {
-   padding: 20px 0 20px 16px;
+/* .tvshows-item-link span {
+   display: inline-flex;
+   align-items: center;
+} */
+
+.tvshows-item-link span::after {
+   content:'→';
+   align-self: center;
+   margin-left: 2px;
+
+   font-size: 24px;
+}
+
+.tvshows-item-content {
+   padding: 15px 0 15px 16px;
 
    border: 1px solid #E6E8EC;
 }
 
-.tvshows-item__title {
+.tvshows-item-title {
    margin-bottom: 4px;
 
    font-size: var(--px-twenty);
@@ -478,8 +492,8 @@ body {
    color: var(var--clr-def-sec-txt);
 }
 
-.tvshows-item__descr {
-   margin-bottom: 20px;
+.tvshows-item-descr {
+   margin-bottom: 16px;
 
    font-size: var(--px-twelve);
    font-weight: 400;
@@ -527,11 +541,17 @@ body {
    margin-bottom: 45px;
 }
 
-.guests-article__wrapper {
+.guests-article-wrapper {
    gap: 30px;
 }
 
-.guests-info__wrapper {
+.guests-article-wrapper img {
+   width: 100%;
+   height: 100%;
+   object-fit: contain;
+}
+
+.guests-info-wrapper {
    flex-direction: column;
    max-width: 458px;
 }
@@ -545,7 +565,7 @@ body {
    line-height: normal;
 }
 
-.guests-article__descr {
+.guests-article-descr {
    font-size: var(--px-sixteen);
    font-weight: 400;
    color: var(--clr-additional-txt);
@@ -649,7 +669,7 @@ body {
    gap: 30px;
 }
 
-.playlists-list__item {
+.playlists-list-item {
    flex: 1 1 calc((100% - 90px) / 4);
    max-width: calc((100% - 90px) / 4);
    min-height: 226px;
@@ -660,17 +680,17 @@ body {
    border: 1px solid #E6E8EC;
 }
 
-.playlists-item__img {
+.playlists-item-img {
    width: 100%;
 
    object-fit: contain;
 }
 
-.playlists-item__content {
+.playlists-item-content {
    padding: 16px 5px 16px 16px;
 }
 
-.playlists-item__title {
+.playlists-item-title {
    margin-bottom: 2px;
 
    font-size: var(--px-sixteen);
@@ -679,7 +699,7 @@ body {
    line-height: normal;
 }
 
-.playlists-item__content span {
+.playlists-item-content span {
    font-size: var(--px-twelve);
    color: var(--clr-additional-txt);
    font-weight: 400;
@@ -805,7 +825,7 @@ body {
 }
 
 /*  --- END - MARKET SECTION. */
-   /* --- START - MARKET SECTION. */
+   /* --- START - ABOUT-US SECTION. */
 
 .about-us {
    min-height: 1293px;
@@ -823,7 +843,15 @@ body {
 
 .about-us-top-wrapper {
    position: relative;
-   gap: 30px;
+   margin-bottom: 30px;
+   width: 100%;
+
+
+   flex-direction: column;
+}
+
+.about-us-top-content {
+   max-width: 634px;
 }
 
 .about-us-top-wrapper::after {
@@ -838,12 +866,8 @@ body {
    background: url(../assets/imgs/about-us-spirals.png) no-repeat center center;
 }
 
-.about-us-top__content {
-   position: relative;
-   max-width: 634px;
-}
-
-.about-us-top__content b {
+.about-us-top-content b {
+   display: inline-block;
    margin-bottom: 8px;
 
    font-size: var(--px-twenty);
@@ -852,9 +876,7 @@ body {
    color: var(--clr-additional-txt);
 }
 
-.about-us-top__content p {
-   margin-bottom: 38px;
-
+.about-us-top-content p {
    font-size: var(--px-twenty);
    font-weight: 400;
    line-height: 160%; /* 32px */
@@ -866,31 +888,35 @@ body {
    margin-bottom: 30px;
 
    flex-wrap: wrap;
-   gap: 30px;
+   justify-content: center;
+   align-items: center;
 }
 
 .about-us__item {
-   max-width: 255px;
-   height: 360px;
-   min-height: 360px;
-
-   flex-direction: column;
+   width: calc((100% - 90px) / 4);
    flex: 1 1 calc((100% - 90px) / 4);
+}
+
+.about-us__item:not(:last-child) {
+   margin-right: 30px;
 }
 
 .about-us__item picture {
    display: block;
-   width: auto;
-   height: auto;
-
    margin-bottom: 30px;
 }
 
-.about-us-item__img {
-   object-fit: contain;
+.about-us-item-img {
+   display: block;
+   /*
+   width: 100%;
+   max-width: 255px;
+   height: auto;
+   - Тут явно что то не так, надо отдельно поработать*/
+   object-fit: cover;
 }
 
-.about-us-item__title {
+.about-us-item-title {
    margin-bottom: 8px;
 
    font-size: var(--px-twenty);
@@ -898,7 +924,7 @@ body {
    color: var(--clr-def-txt);
 }
 
-.about-us-item__descr {
+.about-us-item-descr {
    font-size: var(--px-sixteen);
    font-weight: 400;
    line-height: 24px; /* 150% */
@@ -949,7 +975,7 @@ body {
    justify-content: space-between;
 }
 
-.about-us-form__input {
+.about-us-form-input {
    padding: 25px 32px;
    width: 445px;
    max-width: 445px;
@@ -964,49 +990,49 @@ body {
    border: 1px solid #FFF;
 }
 
-.about-us-form__input:focus-visible {
+.about-us-form-input:focus-visible {
    border: 1px solid var(--style-focus-clr);
    background-color: var(--style-focus-clr-form);
    transition: 0.2s ease-in-out;
 }
 
-.about-us-form__input:hover {
+.about-us-form-input:hover {
    border: 1px solid var(--style-hover-clr);
    background-color: var(--style-focus-clr-form);
    transition: 0.2s ease-in-out;
 }
 
-.about-us__input:hover {
+.about-us-form-input:hover {
    border: 1px solid var(--style-active-clr);
    transition: 0.2s ease-in-out;
 }
 
-.about-us-form__input:invalid:focus {
+.about-us-form-input:invalid:focus {
    border: 1px solid var(--style-error-clr);
    transition: 0.2s ease-in-out;
    /* НЕ ПОЛУЧЕТСЯ ПРИМЕНИТЬ ALERT*/
 }
 
-.about-us-form__input-btn {
+.about-us-form-input-btn {
    align-self: flex-start;
 }
 
-.about-us__form .about-us-form__input-btn:focus-visible {
+.about-us__form .about-us-form-input-btn:focus-visible {
    background-color: var(--style-focus-clr);
    transition: background-color 0.2s ease-in-out;
 }
 
-.about-us__form .about-us-form__input-btn:hover {
+.about-us__form .about-us-form-input-btn:hover {
    background-color: var(--style-hover-clr);
    transition: background-color 0.2s ease-in-out;
 } /* НЕ ПРИМЕНЯЕТСЯ */
 
-.about-us__form .about-us-form__input-btn:active {
+.about-us__form .about-us-form-input-btn:active {
    background-color: var(--style-active-clr);
    transition: background-color 0.2s ease-in-out;
 }
 
-.about-us-form__label {
+.about-us-form-label {
    font-size: var(--px-twelve);
    color: var(--clr-def-txt);
    font-weight: 500;
@@ -1014,7 +1040,7 @@ body {
    cursor: pointer;
 }
 
-.about-us-form__checkbox {
+.about-us-form-checkbox {
    align-self: flex-start;
 
    font-size: var(--px-twelve);
@@ -1022,7 +1048,7 @@ body {
    font-weight: 500;
 }
 
-.about-us-form__default-checkbox {
+.about-us-form-default-checkbox {
    position: absolute;
    width: 0;
    height: 0;
@@ -1034,7 +1060,7 @@ body {
    z-index: -1;
 }
 
-.about-us-form__checkbox {
+.about-us-form-checkbox {
    position: relative;
    display: inline-block;
    width: 14px;
@@ -1045,7 +1071,7 @@ body {
    border: 1px solid #FFF;
 }
 
-.about-us-form__checkbox::before {
+.about-us-form-checkbox::before {
    content: '';
    position: absolute;
    left: 50%;
@@ -1061,8 +1087,8 @@ body {
    background-repeat: no-repeat;
 }
 
-.about-us-form__default-checkbox:checked +
-.about-us-form__checkbox::before {
+.about-us-form-default-checkbox:checked +
+.about-us-form-checkbox::before {
    transform: translate(-50%, -50%) scale(1);
 }
 
@@ -1083,16 +1109,16 @@ footer {
    justify-content: space-between;
 }
 
-.footer-top__social-media-wrapper {
+.footer-top-social-media-wrapper {
    min-height: 65px;
    flex-direction: column;
 }
 
-.footer-logo__link {
+.footer-logo-link {
    margin-bottom: 15px;
 }
 
-.footer-top__social-media {
+.footer-top-social-media {
    gap: 20px;
 }
 
